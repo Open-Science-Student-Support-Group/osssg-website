@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-0.9.349">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2022-02-19">
+
+<title>Open Science Student Support Group - Creating a website with open source software</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link id="quarto-text-highlighting-styles" href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<!-- Enable free FontAwesome V5 icons across site -->
+<script src="https://kit.fontawesome.com/1392a7030f.js" crossorigin="anonymous"></script>
+<!-- Enable Academicons icons across site -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">Open Science Student Support Group</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../about/index.html">About</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../news/index.html">News</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../events/index.html">Events</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../documents/index.html">Documents</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../contact/index.html">Contact</a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://osf.io/unpxa/"><i class="ai ai-osf ai-md" role="img" aria-label="OSSSG OSF"></i></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/Open-Science-Student-Support-Group"><i class="bi bi-github" role="img" aria-label="OSSSG GitHub">
+</i> 
+ </a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#event-details" id="toc-event-details" class="nav-link active" data-scroll-target="#event-details">Event Details</a></li>
+  <li><a href="#before-the-workshop" id="toc-before-the-workshop" class="nav-link" data-scroll-target="#before-the-workshop">Before the workshop</a></li>
+  <li><a href="#during-the-workshop" id="toc-during-the-workshop" class="nav-link" data-scroll-target="#during-the-workshop">During the workshop</a></li>
+  <li><a href="#after-the-workshop" id="toc-after-the-workshop" class="nav-link" data-scroll-target="#after-the-workshop">After the workshop</a>
+  <ul class="collapse">
+  <li><a href="#general-resources" id="toc-general-resources" class="nav-link" data-scroll-target="#general-resources">General resources</a></li>
+  <li><a href="#distill-resources" id="toc-distill-resources" class="nav-link" data-scroll-target="#distill-resources">Distill resources</a></li>
+  <li><a href="#blogdown-resources" id="toc-blogdown-resources" class="nav-link" data-scroll-target="#blogdown-resources">Blogdown resources</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/Open-Science-Student-Support-Group/osssg-website/edit/main/events/posts/2022-03-04_creating-websites/index.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/Open-Science-Student-Support-Group/osssg-website/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Creating a website with open source software</h1>
+<p class="subtitle lead">A workshop on creating websites with R Markdown for new and experienced R users.</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">workshops</div>
+  </div>
+  </div>
+
+
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 19, 2022</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+</header>
+
+<section id="event-details" class="level2">
+<h2 class="anchored" data-anchor-id="event-details">Event Details</h2>
+<p><strong>Speaker</strong>: <a href="https://michaelmccarthy.tidytales.ca">Michael McCarthy</a><br>
+<strong>Date and Time</strong>: March 4, 2022, from 4:00 PM to 6:00 PM<br>
+<strong>Location</strong>: University of Calgary</p>
+<div class="tool">
+<p><a href="https://github.com/mccarthy-m-g/osssg-website-workshop" role="button" class="btn btn-outline-dark"> <i class="fab fa-github"></i> Materials </a></p>
+</div>
+<p>A website is a wonderful place for showcasing yourself, mobilizing knowledge in your learning community, building an online portfolio, or anything else you can imagine! Thanks to the power of open source software, creating a stylish website is quick, easy, and free. No programming experience required.</p>
+<p>In this workshop we will explore open source tools and workflows for creating and deploying websites. By the end of the workshop you will have your very own website up and running on the web; bring a picture and bio so you can begin to customize your site!</p>
+<p>We will focus on three types of websites for this workshop, discussing their differences and the pros and cons of each approach:</p>
+<ul>
+<li>Single page sites</li>
+<li>Multipage sites</li>
+<li>Blogs</li>
+</ul>
+</section>
+<section id="before-the-workshop" class="level2">
+<h2 class="anchored" data-anchor-id="before-the-workshop">Before the workshop</h2>
+<p>To prepare for this workshop, please do the following.</p>
+<p><strong>Create a GitHub account</strong>: GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere. Create an account at <a href="https://github.com" class="uri">https://github.com</a>.</p>
+<p><strong>Sign up for Netlify using your GitHub account</strong>: Netlify is a platform for hosting and deploying static websites whose source files are stored on GitHub. Sign up at <a href="https://app.netlify.com/signup" class="uri">https://app.netlify.com/signup</a>.</p>
+<p><strong>Install GitHub Desktop</strong>: GitHub Desktop is is an application that enables you to interact with GitHub using a GUI instead of the command line or a web browser. Download and install it from <a href="https://desktop.github.com" class="uri">https://desktop.github.com</a>.</p>
+<p><strong>Install R</strong>: R can be downloaded from CRAN (the comprehensive R archive network) using the following link <a href="https://cloud.r-project.org" class="uri">https://cloud.r-project.org</a>. A new major version of R comes out once a year, and there are 2-3 minor releases each year.</p>
+<p><strong>Install RStudio</strong>: RStudio is an integrated development environment, or IDE, for R. Download and install it from <a href="http://www.rstudio.com/download" class="uri">http://www.rstudio.com/download</a>. RStudio is updated a couple of times a year. When a new version is available, RStudio will let you know. It’s a good idea to upgrade regularly so you can take advantage of the latest and greatest features.</p>
+</section>
+<section id="during-the-workshop" class="level2">
+<h2 class="anchored" data-anchor-id="during-the-workshop">During the workshop</h2>
+<p>We will be exploring three R packages—<a href="https://github.com/seankross/postcards">postcards</a>, <a href="https://rstudio.github.io/distill/">distill</a>, and <a href="https://pkgs.rstudio.com/blogdown/">blogdown</a>—that can be used to build a website. To install these packages, run the following in the R console.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"postcards"</span>, <span class="st">"distill"</span>, <span class="st">"blogdown"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Each of these packages come with a function to build the basic skeleton for a website, which you can then fill out, add on to, and customize to make the site your own.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a postcards website</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>postcards<span class="sc">::</span><span class="fu">create_postcard</span>()</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a distill website or blog</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>distill<span class="sc">::</span><span class="fu">create_website</span>()</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>distill<span class="sc">::</span><span class="fu">create_blog</span>()</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a Hugo website or blog</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>blogdown<span class="sc">::</span><span class="fu">new_site</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="after-the-workshop" class="level2">
+<h2 class="anchored" data-anchor-id="after-the-workshop">After the workshop</h2>
+<p>The R community has made great resources on building and customizing websites with the packages we explored today. Check them out!</p>
+<section id="general-resources" class="level3">
+<h3 class="anchored" data-anchor-id="general-resources">General resources</h3>
+<ul>
+<li><a href="https://youtu.be/MrW5XFf7aps">Building a blog with R</a></li>
+<li><a href="https://youtu.be/QcE4RBH2auQ">How to Get Your Materials Online With R Markdown</a></li>
+</ul>
+</section>
+<section id="distill-resources" class="level3">
+<h3 class="anchored" data-anchor-id="distill-resources">Distill resources</h3>
+<ul>
+<li><a href="https://rstudio.github.io/distill/">Distill for R Markdown</a></li>
+<li><a href="https://themockup.blog/posts/2020-08-01-building-a-blog-with-distill/">Building a blog with distill</a></li>
+<li><a href="https://distillery.rbind.io/">The distillery</a></li>
+</ul>
+</section>
+<section id="blogdown-resources" class="level3">
+<h3 class="anchored" data-anchor-id="blogdown-resources">Blogdown resources</h3>
+<ul>
+<li><a href="https://bookdown.org/yihui/blogdown/">blogdown: Creating websites with R Markdown</a></li>
+<li><a href="https://themes.gohugo.io/">Hugo Themes</a></li>
+<li><a href="https://www.garrickadenbuie.com/blog/blogdown-netlify-new-post-workflow/">A blogdown new post workflow with Github and Netlify</a></li>
+<li><a href="https://www.apreshill.com/blog/2020-12-new-year-new-blogdown/">Up &amp; running with blogdown in 2021</a></li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp(/https:\/\/osssg\.netlify\.app/);
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Proudly supported by <a href="https://gsa.ucalgary.ca/financial-support/quality-money-program/"><img src="../../../files/images/quality-money-logo.png" alt="Quality Money" style="height:1.65em"></a></div>   
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../../../contact/index.html">Contact</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-0.9.349">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Michael McCarthy">
+<meta name="dcterms.date" content="2022-04-28">
+
+<title>Open Science Student Support Group - Getting Started with Slack</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link id="quarto-text-highlighting-styles" href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<!-- Enable free FontAwesome V5 icons across site -->
+<script src="https://kit.fontawesome.com/1392a7030f.js" crossorigin="anonymous"></script>
+<!-- Enable Academicons icons across site -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">Open Science Student Support Group</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../about/index.html">About</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../news/index.html">News</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../events/index.html">Events</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../documents/index.html">Documents</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../contact/index.html">Contact</a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://osf.io/unpxa/"><i class="ai ai-osf ai-md" role="img" aria-label="OSSSG OSF"></i></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/Open-Science-Student-Support-Group"><i class="bi bi-github" role="img" aria-label="OSSSG GitHub">
+</i> 
+ </a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#what-is-slack" id="toc-what-is-slack" class="nav-link active" data-scroll-target="#what-is-slack">What is Slack?</a></li>
+  <li><a href="#set-up-your-profile" id="toc-set-up-your-profile" class="nav-link" data-scroll-target="#set-up-your-profile">Set up your profile</a></li>
+  <li><a href="#make-sure-you-dont-miss-any-important-messages" id="toc-make-sure-you-dont-miss-any-important-messages" class="nav-link" data-scroll-target="#make-sure-you-dont-miss-any-important-messages">Make sure you don’t miss any important messages</a>
+  <ul class="collapse">
+  <li><a href="#personal-notifications-settings" id="toc-personal-notifications-settings" class="nav-link" data-scroll-target="#personal-notifications-settings">Personal Notifications Settings:</a></li>
+  </ul></li>
+  <li><a href="#how-is-our-slack-workspace-organized" id="toc-how-is-our-slack-workspace-organized" class="nav-link" data-scroll-target="#how-is-our-slack-workspace-organized">How is our Slack workspace organized?</a></li>
+  <li><a href="#slack-community-guidelines" id="toc-slack-community-guidelines" class="nav-link" data-scroll-target="#slack-community-guidelines">Slack Community Guidelines</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/Open-Science-Student-Support-Group/osssg-website/edit/main/documents/posts/slack-getting-started/index.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/Open-Science-Student-Support-Group/osssg-website/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Getting Started with Slack</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">tutorials</div>
+  </div>
+  </div>
+
+
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Michael McCarthy </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 28, 2022</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+</header>
+
+<section id="what-is-slack" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-slack">What is Slack?</h2>
+<p>Slack is a channel-based messaging platform. With Slack, people can work together more effectively and find the information they need to do their best work.</p>
+<p>A Slack workspace is <a href="https://slack.com/help/articles/360017938993-What-is-a-channel">made up of channels</a>, where team members can communicate and work together:</p>
+<ul>
+<li>A channel is a single place for a team to share messages, tools, and files.</li>
+<li>Team members can <a href="https://slack.com/help/articles/205239967-Join-a-channel">join</a> and <a href="https://slack.com/help/articles/201375146-Leave-a-channel">leave</a> channels as needed.</li>
+<li>Discussions in channels are organized through <a href="https://slack.com/help/articles/115000769927-Use-threads-to-organize-discussions-">threads</a>. To start or reply to a thread click/tap on the message you’d like to reply to and tap the ‘Start in Thread’ icon, or ‘Add a Reply’ button.</li>
+<li>Find unread messages by going to the bolded channels/DMs on the left (make sure to check out the replies to messages by clicking ‘X replies’ at the bottom), or find a collection of all your most recent messages under ‘Threads’ and ‘All DMs’ at the top left of your screen.</li>
+<li>Click the plus-sign next to ‘Channels’ and select ‘browse channels’ to find and join channels in our workspace. Select ‘create a channel’ to create your own channel.</li>
+</ul>
+<p>You can also Direct Message (DM) other OSSSG members. Click the plus-sign next to ‘Direct messages’ when you hover over it to find others and send them private messages. DMs can be useful in a number of ways:</p>
+<ul>
+<li>A substitute for an in-person, 1-1 conversation.</li>
+<li>An easy way to catch up with a teammate.</li>
+<li>A quick and simple way to ask questions.</li>
+</ul>
+</section>
+<section id="set-up-your-profile" class="level2">
+<h2 class="anchored" data-anchor-id="set-up-your-profile">Set up your profile</h2>
+<p>By clicking on your profile picture, you can edit your profile to include the name/pronouns you go by, a personal blurb and profile picture to personalize your account.</p>
+</section>
+<section id="make-sure-you-dont-miss-any-important-messages" class="level2">
+<h2 class="anchored" data-anchor-id="make-sure-you-dont-miss-any-important-messages">Make sure you don’t miss any important messages</h2>
+<p>We encourage you to download the Slack app for desktop or mobile (or both) so that you will receive notifications from Slack. If you only use Slack in your browser you are likely to miss out on important communications from the group.</p>
+<section id="personal-notifications-settings" class="level3">
+<h3 class="anchored" data-anchor-id="personal-notifications-settings">Personal Notifications Settings:</h3>
+<ul>
+<li>On your desktop look to the left of the screen on Slack, click the group title and scroll down to preferences.</li>
+<li>You can change desktop/mobile notifications here to best represent the level of engagement you’d like to have. You can receive all messages, only direct messages, mentions, and chosen keywords, or nothing until you check Slack yourself.</li>
+<li>Under ‘Notification schedule’, you can set a time for when you will receive no notifications, such as at night.</li>
+<li>You can also set notifications settings for specific channels by navigating to that channel, clicking the name at the top to open ‘Details’, clicking the three dots above ‘More’ and selecting ‘Change notifications’.</li>
+</ul>
+</section>
+</section>
+<section id="how-is-our-slack-workspace-organized" class="level2">
+<h2 class="anchored" data-anchor-id="how-is-our-slack-workspace-organized">How is our Slack workspace organized?</h2>
+<p>We have created several public channels in our workspace, each tailored to a specific purpose:</p>
+<ol type="1">
+<li><a href="https://opensciencest-4fn7856.slack.com/archives/C01B02XP6JC">#_general</a> is the one channel that includes everyone. Keep your eye on that one for general announcements, for example about our biweekly sessions</li>
+<li><a href="https://opensciencest-4fn7856.slack.com/archives/C01AND0N44U">#_members</a> is a place to introduce yourself to the group and make new connections</li>
+<li><a href="https://opensciencest-4fn7856.slack.com/archives/C01D2V2ME72">#_discussions</a> is a place to ask your questions and engage in discussions about Open Science practices and related issues</li>
+<li><a href="https://opensciencest-4fn7856.slack.com/archives/C01A8QFJFHC">#_social</a> is a place for socializing with other OSSSG members – you can post memes, pictures of your pets or food and any other fun things here, it doesn’t have to be about Open Science</li>
+<li><a href="https://opensciencest-4fn7856.slack.com/archives/C01LDG3GH4M">#_projects</a> is a place where we brainstorm Open Science-related project ideas – please check it out to see if there are any projects you might want to get involved in, or share your own ideas!</li>
+<li><a href="https://opensciencest-4fn7856.slack.com/archives/C01AGL72A2Y">#_resources</a> is a place to share Open Science resources with each other</li>
+<li><a href="https://opensciencest-4fn7856.slack.com/archives/C01B9G80C2Y">#_polls</a> is the place where the polls that we use to make important decisions and plan organizing meetings are posted – please feel free to vote, we’d love your input!</li>
+<li>Channels starting with #session… are places where materials of sessions about specific Open Science topics are collected and discussed – please check these out even if you could not make it to the session itself</li>
+<li><a href="https://opensciencest-4fn7856.slack.com/archives/C01A791HGUD">#organizers_and_contributers</a> is the place where OSSSG members interested in the organizational aspects of our group come together to discuss, share meeting notes, and put out and respond to calls for people who can help out with specific tasks</li>
+</ol>
+</section>
+<section id="slack-community-guidelines" class="level2">
+<h2 class="anchored" data-anchor-id="slack-community-guidelines">Slack Community Guidelines</h2>
+<ul>
+<li>Responses must adhere to the <a href="https://osf.io/me62r/">OSSSG community guidelines</a> in regard to respect every member of the group. Please see: we do not tolerate harassment; we use inclusive, respectful language; we value diversity and aim to create an inclusive environment; we hold a non-judgemental place.</li>
+<li>When replying in channels, hover over the message you’d like to reply to, and click the chat bubble at the top right of the message to open a thread and begin chatting. This will limit notifications sent to everyone and will send a direct notification to the person you’re replying to.</li>
+<li>Refrain from typing in only capital letters and sending messages irrelevant to the channel topic.</li>
+<li>If you are replying under a specific thread, keep comments focused on the topic at hand. If you have a comment not associated with the topic, please share it in a separate post to the channel or in the "socials" channel if it is not related to any of the channel topics.</li>
+<li>Be aware that comments posted in public slack channels will be visible to all members. Do not post personal comments that you would not want public members to know.</li>
+<li>Direct Messaging is available, and is promoted for side-topics amongst a group, and one on one conversations, when the comments are not applicable to public threads.</li>
+<li>External links related to the discussed topic are allowed in the appropriate thread, otherwise they are only permitted under the "socials" thread.</li>
+<li>Avoid speaking in "CAPS LOCK". Use appropriate language when engaging in community threads.</li>
+<li>Failure to follow these guidelines can result in a temporary suspension of privileges as agreed upon by the Feedback community, and continued breach of rules will result in a permanent ban.</li>
+</ul>
+<p>You can learn more about working with Slack <a href="https://slack.com/intl/en-ca/help/categories/360000049043">here</a>. If you have any questions about or issues with Slack, you can contact Michael (<span class="citation" data-cites="Michael">@Michael</span> on Slack or through email: <a href="mailto:michael.mccarthy@ucalgary.ca">michael.mccarthy@ucalgary.ca</a>).</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp(/https:\/\/osssg\.netlify\.app/);
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Proudly supported by <a href="https://gsa.ucalgary.ca/financial-support/quality-money-program/"><img src="../../../files/images/quality-money-logo.png" alt="Quality Money" style="height:1.65em"></a></div>   
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../../../contact/index.html">Contact</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>

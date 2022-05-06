@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Open Science Student Support Group</title>
+<link>https://osssg.netlify.app/news/index.html</link>
+<atom:link href="https://osssg.netlify.app/news/index.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-0.9.349</generator>
+<lastBuildDate>Thu, 17 Feb 2022 07:00:00 GMT</lastBuildDate>
+<item>
+  <title>Quality Money</title>
+  <dc:creator>Arianna Gibson</dc:creator>
+  <link>https://osssg.netlify.app/news/posts/2022-04-27_quality-money/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>We are thrilled to announce that the OSSSG was awarded a Quality Money grant from the Graduate Students Association! <span class="emoji" data-emoji="tada">🎉</span></p>
+<p>This grant will allow us to bring you more open science content and events, and work towards our aim of building a thriving student-led community dedicated to the promotion, normalization and practice of open and inclusive scientific research. We are especially excited that we will be able to compensate the students who share their knowledge through presentations and workshops for their valuable contributions (ps. this could be you!). We look forward to sharing more information about the 2022-2023 OSSSG plans soon. In the meantime, post here on Slack or contact <span class="citation" data-cites="Emiko">@Emiko</span> at ejmuraki@ucalgary.ca if you have any questions!</p>
+
+
+
+ ]]></description>
+  <guid>https://osssg.netlify.app/news/posts/2022-04-27_quality-money/index.html</guid>
+  <pubDate>Thu, 17 Feb 2022 07:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

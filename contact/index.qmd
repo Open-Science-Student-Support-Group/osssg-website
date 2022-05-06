@@ -1,0 +1,28 @@
+---
+title: "Contact"
+title-block-banner: "#EDF3F9"
+title-block-banner-color: body
+
+listing:
+  - id: members
+    template: members.ejs
+    contents: members.yml
+    filter-ui: true
+---
+
+## Mailing List
+
+To receive email updates of our regular meetings and public events, please sign up for our mailing list here.
+
+::: {.tool}
+<!-- TODO: Add link -->
+<a href="mailto:..." role="button" class="btn btn-outline-dark">
+<i class="fas fa-envelope"></i>
+Subscribe
+</a>
+:::
+
+## Members
+
+:::{#members}
+:::

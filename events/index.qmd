@@ -1,0 +1,15 @@
+---
+title: Events
+listing:
+  sort: "date desc"
+  contents: "posts"
+  sort-ui: false
+  filter-ui: false
+  categories: true
+  feed: true
+  fields: [date, title, description]
+  max-description-length: 500
+page-layout: full
+title-block-banner: "#EDF3F9"
+title-block-banner-color: body
+---

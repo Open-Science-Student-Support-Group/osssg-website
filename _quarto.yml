@@ -1,0 +1,52 @@
+project:
+  type: website
+
+website:
+  title: "Open Science Student Support Group"
+  site-url: https://osssg.netlify.app
+  repo-url: https://github.com/Open-Science-Student-Support-Group/osssg-website
+  repo-actions: [edit, issue]
+
+  # https://quarto.org/docs/output-formats/html-basics.html#commenting
+  # comments:
+  #   giscus:
+  #     repo: Open-Science-Student-Support-Group/osssg-website
+
+  navbar:
+    background: primary
+    left:
+      - text: "About"
+        href: about/index.qmd
+      - text: "News"
+        href: news/index.qmd
+      - text: "Events"
+        href: events/index.qmd
+      - text: "Documents"
+        href: documents/index.qmd
+      - text: "Contact"
+        href: contact/index.qmd
+    right:
+      - text: "<i class='ai ai-osf ai-md' role='img' aria-label='OSSSG OSF'></i>"
+        href: https://osf.io/unpxa/
+      - icon: github
+        href: https://github.com/Open-Science-Student-Support-Group
+        aria-label: OSSSG GitHub
+
+  page-footer:
+    left: |
+      Proudly supported by
+      [![](/files/images/quality-money-logo.png){fig-alt="Quality Money" height=1.65em}](https://gsa.ucalgary.ca/financial-support/quality-money-program/)
+    right:
+      - text: "Contact"
+        href: contact/index.qmd
+    background: light
+
+format:
+  html:
+    theme: [minty, theme.scss]
+    css: styles.css
+    toc: true
+    from: markdown+emoji
+    link-external-newwindow: true
+    include-in-header:
+      - _common/header.html

@@ -1,0 +1,19 @@
+---
+title: Documents
+listing:
+  sort: "date desc"
+  contents: "posts"
+  type: "table"
+  page-size: 30
+  sort-ui: true
+  filter-ui: true
+  categories: true
+  feed: false
+  field-display-names:
+    author: "Author(s)"
+    date: Last modified
+page-layout: full
+title-block-banner: "#EDF3F9"
+title-block-banner-color: body
+search: true
+---

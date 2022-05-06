@@ -1,0 +1,18 @@
+/* css styles https://member.org/docs/output-formats/html-themes.html#theme-options */
+
+
+.list.member-listing div:last-of-type {
+  border-bottom: none;
+}
+
+div.member-post {
+  margin-bottom: 1.5em;
+  border-bottom: 1px solid #ced4da;
+}
+
+/* This aligns the osf icon with the github icon better */
+.ai-md {
+  font-size: 1.128em;
+  vertical-align: -8.05%;
+  margin-left: -0.055em;
+}

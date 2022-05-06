@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Open Science Student Support Group</title>
+<link>https://osssg.netlify.app/events/index.html</link>
+<atom:link href="https://osssg.netlify.app/events/index.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-0.9.349</generator>
+<lastBuildDate>Sat, 19 Feb 2022 07:00:00 GMT</lastBuildDate>
+<item>
+  <title>Creating a website with open source software</title>
+  <link>https://osssg.netlify.app/events/posts/2022-03-04_creating-websites/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<section id="event-details" class="level2">
+<h2 class="anchored" data-anchor-id="event-details">Event Details</h2>
+<p><strong>Speaker</strong>: <a href="https://michaelmccarthy.tidytales.ca">Michael McCarthy</a><br>
+<strong>Date and Time</strong>: March 4, 2022, from 4:00 PM to 6:00 PM<br>
+<strong>Location</strong>: University of Calgary</p>
+<div class="tool">
+<p><a href="https://github.com/mccarthy-m-g/osssg-website-workshop" class="btn btn-outline-dark"> <i class="fab fa-github"></i> Materials </a></p>
+</div>
+<p>A website is a wonderful place for showcasing yourself, mobilizing knowledge in your learning community, building an online portfolio, or anything else you can imagine! Thanks to the power of open source software, creating a stylish website is quick, easy, and free. No programming experience required.</p>
+<p>In this workshop we will explore open source tools and workflows for creating and deploying websites. By the end of the workshop you will have your very own website up and running on the web; bring a picture and bio so you can begin to customize your site!</p>
+<p>We will focus on three types of websites for this workshop, discussing their differences and the pros and cons of each approach:</p>
+<ul>
+<li>Single page sites</li>
+<li>Multipage sites</li>
+<li>Blogs</li>
+</ul>
+</section>
+<section id="before-the-workshop" class="level2">
+<h2 class="anchored" data-anchor-id="before-the-workshop">Before the workshop</h2>
+<p>To prepare for this workshop, please do the following.</p>
+<p><strong>Create a GitHub account</strong>: GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere. Create an account at <a href="https://github.com" class="uri">https://github.com</a>.</p>
+<p><strong>Sign up for Netlify using your GitHub account</strong>: Netlify is a platform for hosting and deploying static websites whose source files are stored on GitHub. Sign up at <a href="https://app.netlify.com/signup" class="uri">https://app.netlify.com/signup</a>.</p>
+<p><strong>Install GitHub Desktop</strong>: GitHub Desktop is is an application that enables you to interact with GitHub using a GUI instead of the command line or a web browser. Download and install it from <a href="https://desktop.github.com" class="uri">https://desktop.github.com</a>.</p>
+<p><strong>Install R</strong>: R can be downloaded from CRAN (the comprehensive R archive network) using the following link <a href="https://cloud.r-project.org" class="uri">https://cloud.r-project.org</a>. A new major version of R comes out once a year, and there are 2-3 minor releases each year.</p>
+<p><strong>Install RStudio</strong>: RStudio is an integrated development environment, or IDE, for R. Download and install it from <a href="http://www.rstudio.com/download" class="uri">http://www.rstudio.com/download</a>. RStudio is updated a couple of times a year. When a new version is available, RStudio will let you know. It’s a good idea to upgrade regularly so you can take advantage of the latest and greatest features.</p>
+</section>
+<section id="during-the-workshop" class="level2">
+<h2 class="anchored" data-anchor-id="during-the-workshop">During the workshop</h2>
+<p>We will be exploring three R packages—<a href="https://github.com/seankross/postcards">postcards</a>, <a href="https://rstudio.github.io/distill/">distill</a>, and <a href="https://pkgs.rstudio.com/blogdown/">blogdown</a>—that can be used to build a website. To install these packages, run the following in the R console.</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;">install.packages</span>(<span class="fu" style="color: #4758AB;">c</span>(<span class="st" style="color: #20794D;">"postcards"</span>, <span class="st" style="color: #20794D;">"distill"</span>, <span class="st" style="color: #20794D;">"blogdown"</span>))</span></code></pre></div>
+<p>Each of these packages come with a function to build the basic skeleton for a website, which you can then fill out, add on to, and customize to make the site your own.</p>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="co" style="color: #5E5E5E;"># Create a postcards website</span></span>
+<span id="cb2-2">postcards<span class="sc" style="color: #5E5E5E;">::</span><span class="fu" style="color: #4758AB;">create_postcard</span>()</span>
+<span id="cb2-3"></span>
+<span id="cb2-4"><span class="co" style="color: #5E5E5E;"># Create a distill website or blog</span></span>
+<span id="cb2-5">distill<span class="sc" style="color: #5E5E5E;">::</span><span class="fu" style="color: #4758AB;">create_website</span>()</span>
+<span id="cb2-6">distill<span class="sc" style="color: #5E5E5E;">::</span><span class="fu" style="color: #4758AB;">create_blog</span>()</span>
+<span id="cb2-7"></span>
+<span id="cb2-8"><span class="co" style="color: #5E5E5E;"># Create a Hugo website or blog</span></span>
+<span id="cb2-9">blogdown<span class="sc" style="color: #5E5E5E;">::</span><span class="fu" style="color: #4758AB;">new_site</span>()</span></code></pre></div>
+</section>
+<section id="after-the-workshop" class="level2">
+<h2 class="anchored" data-anchor-id="after-the-workshop">After the workshop</h2>
+<p>The R community has made great resources on building and customizing websites with the packages we explored today. Check them out!</p>
+<section id="general-resources" class="level3">
+<h3 class="anchored" data-anchor-id="general-resources">General resources</h3>
+<ul>
+<li><a href="https://youtu.be/MrW5XFf7aps">Building a blog with R</a></li>
+<li><a href="https://youtu.be/QcE4RBH2auQ">How to Get Your Materials Online With R Markdown</a></li>
+</ul>
+</section>
+<section id="distill-resources" class="level3">
+<h3 class="anchored" data-anchor-id="distill-resources">Distill resources</h3>
+<ul>
+<li><a href="https://rstudio.github.io/distill/">Distill for R Markdown</a></li>
+<li><a href="https://themockup.blog/posts/2020-08-01-building-a-blog-with-distill/">Building a blog with distill</a></li>
+<li><a href="https://distillery.rbind.io/">The distillery</a></li>
+</ul>
+</section>
+<section id="blogdown-resources" class="level3">
+<h3 class="anchored" data-anchor-id="blogdown-resources">Blogdown resources</h3>
+<ul>
+<li><a href="https://bookdown.org/yihui/blogdown/">blogdown: Creating websites with R Markdown</a></li>
+<li><a href="https://themes.gohugo.io/">Hugo Themes</a></li>
+<li><a href="https://www.garrickadenbuie.com/blog/blogdown-netlify-new-post-workflow/">A blogdown new post workflow with Github and Netlify</a></li>
+<li><a href="https://www.apreshill.com/blog/2020-12-new-year-new-blogdown/">Up &amp; running with blogdown in 2021</a></li>
+</ul>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>workshops</category>
+  <guid>https://osssg.netlify.app/events/posts/2022-03-04_creating-websites/index.html</guid>
+  <pubDate>Sat, 19 Feb 2022 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Open Science in Industry</title>
+  <link>https://osssg.netlify.app/events/posts/2021-11-19_open-science-in-industry/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<section id="event-details" class="level2">
+<h2 class="anchored" data-anchor-id="event-details">Event Details</h2>
+<p><strong>Speakers</strong>: Eden-Raye Lukacik and Samantha Jones<br>
+<strong>Date and Time</strong>: November 19, 2021, from 4:00 PM to 5:30 PM<br>
+<strong>Location</strong>: University of Calgary</p>
+<p>Eden-Raye (Raye) Lukacik is a PhD candidate in the Industrial-Organizational specialization. Her experience has involved creating and validating propriety measures–a low thrill roller coaster of science and industry. Samantha Jones is a PhD candidate in the Industrial Organizational specialization and a lead facilitator with the Individual and Team Performance Lab. Her applied experiences largely focus on team dynamics and performance, leadership, and training in healthcare and education settings. Her biggest partnership challenge is balancing the client’s needs with good scientific design. We will discuss the benefits we’ve experienced, the challenges we’ve encountered, and some considerations for anyone looking to work with industry!</p>
+
+
+</section>
+
+ ]]></description>
+  <category>talks</category>
+  <guid>https://osssg.netlify.app/events/posts/2021-11-19_open-science-in-industry/index.html</guid>
+  <pubDate>Fri, 22 Oct 2021 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Perfectionism</title>
+  <link>https://osssg.netlify.app/events/posts/2021-10-22_perfectionism/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<section id="event-details" class="level2">
+<h2 class="anchored" data-anchor-id="event-details">Event Details</h2>
+<p><strong>Speakers</strong>: Arianna Gibson and Brittany Lindsay<br>
+<strong>Date and Time</strong>: October 22, 2021, from 4:00 PM to 5:30 PM<br>
+<strong>Location</strong>: University of Calgary</p>
+<p>Join OSSSG as we explore the concept of perfectionism, its impact on our lives, and how we might reflect on our tendencies and decide to let go a bit more! This session will include brief videos and information about the concepts, facilitated discussions, and relevant exercises guided by two “un-expert” students, Brittany Lindsay and Arianna Gibson, who are excited to explore this concept with everyone! Although less focused on open-scence than our typical events, this topic was indicated as an interest to our members and will help bring us together as a community. We look forward to seeing you there!</p>
+
+
+</section>
+
+ ]]></description>
+  <category>talks</category>
+  <guid>https://osssg.netlify.app/events/posts/2021-10-22_perfectionism/index.html</guid>
+  <pubDate>Wed, 06 Oct 2021 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Questionable Research Practices</title>
+  <link>https://osssg.netlify.app/events/posts/2021-10-06_questionable-research-practices/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<section id="event-details" class="level2">
+<h2 class="anchored" data-anchor-id="event-details">Event Details</h2>
+<p><strong>Speaker</strong>: Chelsea Moran<br>
+<strong>Date and Time</strong>: October 6, 2021, from 4:00 PM to 5:30 PM<br>
+<strong>Location</strong>: University of Calgary</p>
+<p>Talking about questionable research practices may be uncomfortable. You may be thinking: what if I’ve been a part of questionable research practices, either knowingly or unknowingly? What if I don’t know why a particular research practice is questionable? What if I don’t even know what QRP stands for?</p>
+<p>QRPs can be a very challenging topic for many reasons, but they are necessary to confront when working towards more open and accessible science. Our very own Chelsea Moran has a new pre-print that found that QRPs are more common than not amongst Canadian psychology students, highlighting the importance and relevance of this topic in our current context.</p>
+<p>Join us for an informal discussion about QRPs in graduate student research. We encourage you to read Chelsea’s <a href="https://psyarxiv.com/kjby3">pre-print</a>, check out her <a href="https://twitter.com/chelseavmoran/status/1418622122268762118?s=20">Twitter thread</a> or watch her <a href="https://www.dropbox.com/s/8z7nnh52lc3u2q9/64766-12MIN-Moran-PrevalenceOfQuestionable.mp4?dl=0">12-minute video presentation</a> for an overview of what QRPs are and the key takeaways from the survey. This will be an open, non-judgmental space to raise questions or comments you have about QRPs, thoughts provoked by the pre-print, or to discuss instances when you’ve encountered QRPs, either first or second-hand.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>talks</category>
+  <guid>https://osssg.netlify.app/events/posts/2021-10-06_questionable-research-practices/index.html</guid>
+  <pubDate>Thu, 16 Sep 2021 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Welcome back Open Science!</title>
+  <link>https://osssg.netlify.app/events/posts/2021-09-16_welcome-back-open-science/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<section id="event-details" class="level2">
+<h2 class="anchored" data-anchor-id="event-details">Event Details</h2>
+<p><strong>Speakers</strong>: Brittany Lindsay, Chelsea Moran, and Gwen van der Wijk<br>
+<strong>Date and Time</strong>: September 9, 2021, from 4:00 PM to 5:30 PM<br>
+<strong>Location</strong>: University of Calgary</p>
+<p>The Open Science Student Support Group (OSSSG - Oh! - Triple S – Gee) was founded in 2020 in the Department of Psychology, University of Calgary, by a group of graduate students eager to learn about different open science practices and support each other in implementing them in our own research.</p>
+<p>We are back after a summer hiatus! After organizing 12 sessions during the 2020-2021 academic year, we hope to use our first session of the Fall 2021 semester to connect and reconnect. Join us for an introduction and refresher to open science, a presentation and discussion of the OSSSG’s vision statement, goals, values and organizing structure and just spend some time getting to know and checking in with one another. There will be lots of space provided to share ideas and set priorities for this semester.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>talks</category>
+  <guid>https://osssg.netlify.app/events/posts/2021-09-16_welcome-back-open-science/index.html</guid>
+  <pubDate>Wed, 01 Sep 2021 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Hot Topics in Open Science</title>
+  <link>https://osssg.netlify.app/events/posts/2021-04-09_hot-topics-open-science/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<section id="event-details" class="level2">
+<h2 class="anchored" data-anchor-id="event-details">Event Details</h2>
+<p><strong>Date and Time</strong>: April 9, 2021, from 4:00 PM to 5:30 PM<br>
+<strong>Location</strong>: University of Calgary</p>
+<p>event description</p>
+
+
+</section>
+
+ ]]></description>
+  <category>hangouts</category>
+  <guid>https://osssg.netlify.app/events/posts/2021-04-09_hot-topics-open-science/index.html</guid>
+  <pubDate>Fri, 26 Mar 2021 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Knowledge Mobilization</title>
+  <link>https://osssg.netlify.app/events/posts/2021-03-26_knowledge-mobilization/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<section id="event-details" class="level2">
+<h2 class="anchored" data-anchor-id="event-details">Event Details</h2>
+<p><strong>Speaker</strong>: Lorraine Reggin<br>
+<strong>Date and Time</strong>: March 26, 2021, from 4:00 PM to 5:30 PM<br>
+<strong>Location</strong>: University of Calgary</p>
+<p>event description</p>
+
+
+</section>
+
+ ]]></description>
+  <category>talks</category>
+  <guid>https://osssg.netlify.app/events/posts/2021-03-26_knowledge-mobilization/index.html</guid>
+  <pubDate>Fri, 12 Mar 2021 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>You and Open Science</title>
+  <link>https://osssg.netlify.app/events/posts/2021-03-12_you-and-open-science/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<section id="event-details" class="level2">
+<h2 class="anchored" data-anchor-id="event-details">Event Details</h2>
+<p><strong>Date and Time</strong>: March 12, 2021, from 4:00 PM to 5:30 PM<br>
+<strong>Location</strong>: University of Calgary</p>
+<p>event description</p>
+
+
+</section>
+
+ ]]></description>
+  <category>hangouts</category>
+  <guid>https://osssg.netlify.app/events/posts/2021-03-12_you-and-open-science/index.html</guid>
+  <pubDate>Fri, 26 Feb 2021 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Equity, Diversity and Inclusion in Open Science</title>
+  <link>https://osssg.netlify.app/events/posts/2021-02-26_edi-open-science/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<section id="event-details" class="level2">
+<h2 class="anchored" data-anchor-id="event-details">Event Details</h2>
+<p><strong>Speaker</strong>: Chelsie Hart and Emiko Muraki<br>
+<strong>Date and Time</strong>: February 26, 2021, from 4:00 PM to 5:30 PM<br>
+<strong>Location</strong>: University of Calgary</p>
+<p>event description</p>
+
+
+</section>
+
+ ]]></description>
+  <category>talks</category>
+  <guid>https://osssg.netlify.app/events/posts/2021-02-26_edi-open-science/index.html</guid>
+  <pubDate>Fri, 12 Feb 2021 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Writing reproducible manuscripts in R Markdown</title>
+  <link>https://osssg.netlify.app/events/posts/2021-02-12_reproducible-manuscripts/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<section id="event-details" class="level2">
+<h2 class="anchored" data-anchor-id="event-details">Event Details</h2>
+<p><strong>Speaker</strong>: <a href="https://michaelmccarthy.tidytales.ca">Michael McCarthy</a><br>
+<strong>Date and Time</strong>: February 12, 2021, from 4:00 PM to 5:30 PM<br>
+<strong>Location</strong>: University of Calgary</p>
+<div class="tool">
+<p><a href="https://github.com/mccarthy-m-g/mccoy-and-spock-2287" class="btn btn-outline-dark"> <i class="fab fa-github"></i> Materials </a> <a href="https://mccarthy-m-g.github.io/mccoy-and-spock-2287/mccoy-and-spock-2287-distill.html" class="btn btn-outline-dark"> <i class="fas fa-seedling"></i> Example </a></p>
+</div>
+<p>This workshop covers principles and practices important for making your manuscripts reproducible by other scientists (or future you). We will learn about these principles and practices and how to implement them through a fake scientific paper, written by Bones and Spock from the television series <em>Star Trek: The Original Series</em>, made for showcasing how to write reproducible manuscripts in R Markdown.</p>
+<p>This workshop is a followup to Michael’s talk, <a href="../../../events/posts/2021-01-29_reproducible-science/index.html">Doing reproducible science</a>.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>workshops</category>
+  <guid>https://osssg.netlify.app/events/posts/2021-02-12_reproducible-manuscripts/index.html</guid>
+  <pubDate>Fri, 29 Jan 2021 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Doing reproducible science</title>
+  <link>https://osssg.netlify.app/events/posts/2021-01-29_reproducible-science/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<section id="event-details" class="level2">
+<h2 class="anchored" data-anchor-id="event-details">Event Details</h2>
+<p><strong>Speaker</strong>: <a href="https://michaelmccarthy.tidytales.ca">Michael McCarthy</a><br>
+<strong>Date and Time</strong>: January 1, 2021, from 4:00 PM to 5:30 PM<br>
+<strong>Location</strong>: University of Calgary</p>
+<p>What is reproducibility and why is it important that your scientific work is reproducible? Reproducibility refers to a scientific pipeline whose steps, processes, procedures, and results can be reproduced by other scientists (or future you), ensuring that results can be verified, and that the decisions that led to those results can be understood. In our first Winter 2021 session we will be joined by MSc student Michael McCarthy, who will share with you an opinionated introduction on doing reproducible science. We’ll discuss general principles and procedures, share some neat tricks to make your work better and easier to do, and go over resources you can use to make your science reproducible too.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>talks</category>
+  <guid>https://osssg.netlify.app/events/posts/2021-01-29_reproducible-science/index.html</guid>
+  <pubDate>Fri, 22 Jan 2021 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Troubleshooting Open Science</title>
+  <link>https://osssg.netlify.app/events/posts/2020-12-04_troubleshooting-open-science/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<section id="event-details" class="level2">
+<h2 class="anchored" data-anchor-id="event-details">Event Details</h2>
+<p><strong>Speaker</strong>: Rosemary Twomey<br>
+<strong>Date and Time</strong>: December 4, 2020, from 4:00 PM to 5:30 PM<br>
+<strong>Location</strong>: University of Calgary</p>
+<p>event description</p>
+
+
+</section>
+
+ ]]></description>
+  <category>talks</category>
+  <guid>https://osssg.netlify.app/events/posts/2020-12-04_troubleshooting-open-science/index.html</guid>
+  <pubDate>Fri, 20 Nov 2020 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Pre-registration</title>
+  <link>https://osssg.netlify.app/events/posts/2020-11-20_preregistration/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<section id="event-details" class="level2">
+<h2 class="anchored" data-anchor-id="event-details">Event Details</h2>
+<p><strong>Speakers</strong>: Emiko Muraki &amp; Brittany Lindsay<br>
+<strong>Date and Time</strong>: November 20, 2020, from 4:00 PM to 5:30 PM<br>
+<strong>Location</strong>: University of Calgary</p>
+<p>event description</p>
+
+
+</section>
+
+ ]]></description>
+  <category>talks</category>
+  <guid>https://osssg.netlify.app/events/posts/2020-11-20_preregistration/index.html</guid>
+  <pubDate>Fri, 06 Nov 2020 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Open Data, Data Sharing and Ethics</title>
+  <link>https://osssg.netlify.app/events/posts/2020-11-06_open-data/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<section id="event-details" class="level2">
+<h2 class="anchored" data-anchor-id="event-details">Event Details</h2>
+<p><strong>Speakers</strong>: Jenelle Morgan and Chelsea Moran<br>
+<strong>Date and Time</strong>: November 6, 2020, from 4:00 PM to 5:30 PM<br>
+<strong>Location</strong>: University of Calgary</p>
+<p>event description</p>
+
+
+</section>
+
+ ]]></description>
+  <category>talks</category>
+  <guid>https://osssg.netlify.app/events/posts/2020-11-06_open-data/index.html</guid>
+  <pubDate>Fri, 23 Oct 2020 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Project workflow</title>
+  <link>https://osssg.netlify.app/events/posts/2020-10-23_project-workflow/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<section id="event-details" class="level2">
+<h2 class="anchored" data-anchor-id="event-details">Event Details</h2>
+<p><strong>Speaker</strong>: Elizabeth Morin-Lessard<br>
+<strong>Date and Time</strong>: October 23, 2020, from 4:00 PM to 5:30 PM<br>
+<strong>Location</strong>: University of Calgary</p>
+<p>event description</p>
+
+
+</section>
+
+ ]]></description>
+  <category>talks</category>
+  <guid>https://osssg.netlify.app/events/posts/2020-10-23_project-workflow/index.html</guid>
+  <pubDate>Fri, 09 Oct 2020 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Introduction to Open Science</title>
+  <link>https://osssg.netlify.app/events/posts/2020-10-09_intro_to_open_science/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<section id="event-details" class="level2">
+<h2 class="anchored" data-anchor-id="event-details">Event Details</h2>
+<p><strong>Speaker</strong>: Gwen van der Wijk<br>
+<strong>Date and Time</strong>: October 9, 2020, from 4:00 PM to 5:30 PM<br>
+<strong>Location</strong>: University of Calgary</p>
+<p>event description</p>
+<div class="tool">
+<p><a href="404.md" class="btn btn-outline-dark"> <i class="fas fa-user-plus"></i> Sign Up </a></p>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <category>talks</category>
+  <guid>https://osssg.netlify.app/events/posts/2020-10-09_intro_to_open_science/index.html</guid>
+  <pubDate>Tue, 01 Sep 2020 06:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

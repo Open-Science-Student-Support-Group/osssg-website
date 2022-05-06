@@ -1,0 +1,21 @@
+---
+title: "About"
+
+about:
+  id: hero-heading
+  template: jolla
+---
+
+:::{#hero-heading}
+
+## Who We Are?
+
+OSSSG (Oh! - Triple S – Gee) was founded in 2020 in the Department of Psychology, University of Calgary, by a group of graduate students eager to learn about different open science practices and support each other in implementing them in our own research.
+
+## Our Vision Statement
+
+We aim to develop a thriving student-led community that is dedicated to the promotion, normalization, and practice of open and inclusive scientific research.
+
+## How Will OSSSG Uphold Our Values?
+
+:::

@@ -1,0 +1,32 @@
+- name: Michael McCarthy
+  description: |
+    I am an award winning data scientist and R programmer passionate about solving problems with data.
+    My background is in psychology research, where I’ve studied topics ranging from attitude formation,
+    to decision-making, to individual differences in brain function. Studying how people think and act
+    has given me a deep appreciation for the human side of data science. Much of our data is about
+    people. All of our data is communicated to people. Understanding these relationships has been key
+    to successfully navigating my role as a data scientist.
+    <br><br>
+    If you have a problem that you want to use data science to answer, I would love to help you. I offer
+    several <a href="https://michaelmccarthy.tidytales.ca/consulting/">consulting services</a> to help you accomplish your goals at any point in your project lifecycle,
+    including long and short term consulting work, private training, and drop-in consulting. I value
+    building new connections and would love to discuss opportunities to work with you. Let’s get to know
+    each other.
+    <br><br>
+    When I’m not working you can find me writing music in my studio, riding my bike on the local trails,
+    or spending time with my friends and family.
+  image: images/mccarthy.png
+  image_alt: A picture of Michael hiking in the Rocky Mountains
+  icons:
+    - icon: fas fa-blog
+      href: https://michaelmccarthy.tidytales.ca
+      aria-label: Michael's personal website
+    - icon: fab fa-github
+      href: https://github.com/mccarthy-m-g
+      aria-label: Michael's GitHub
+    - icon: fab fa-twitter
+      href: https://twitter.com/mccarthymg
+      aria-label: Michael's Twitter
+    - icon: fab fa-linkedin
+      href: https://www.linkedin.com/in/mccarthymg/
+      aria-label: Michael's LinkedIn

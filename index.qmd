@@ -1,0 +1,30 @@
+---
+title: "Home"
+listing:
+  - id: news
+    contents: "news/posts"
+    sort: "date desc"
+    page-size: 3
+    feed: true
+  - id: events
+    contents: "events/posts"
+    fields: [date, title, description]
+    sort: "date desc"
+    page-size: 3
+    max-description-length: 500
+    feed: true
+title-block-banner: "#EDF3F9"
+title-block-banner-color: body
+page-layout: full
+margin-header: _common/subscribe.html
+---
+
+## [News](news/index.qmd)
+
+:::{#news}
+:::
+
+## [Events](events/index.qmd)
+
+:::{#events}
+:::
