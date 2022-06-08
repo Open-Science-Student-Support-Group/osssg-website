@@ -13,8 +13,7 @@ listing:
     page-size: 3
     max-description-length: 500
     feed: true
-title-block-banner: "#EDF3F9"
-title-block-banner-color: body
+title-block-banner: true
 page-layout: full
 margin-header: _common/subscribe.html
 ---
