@@ -17,6 +17,10 @@ This document will guide you through the process of making new posts on our webs
 
 You can make new posts under any of these listing pages following the workflow described in this document.
 
+::: {.callout-note}
+You can also follow the general workflow described in this document to make other changes to the website.
+:::
+
 ## How the website works
 
 The OSSSG website is built using [Quarto](https://quarto.org), and the source files for the website are managed on [GitHub](https://github.com). The GitHub repository for the website is located at <https://github.com/Open-Science-Student-Support-Group/osssg-website>.
@@ -120,7 +124,7 @@ Follow the [cloning and forking instructions](https://docs.github.com/en/desktop
 https://github.com/Open-Science-Student-Support-Group/osssg-website
 ```
 
-#### RStudio
+#### RStudio (built-in Git)
 
 If you do not have write privileges for the repository, first fork it on GitHub, then copy the URL of your fork and complete the steps below. If you do have write privileges, then copy the URL for our website's repository and complete the steps below.
 
@@ -134,7 +138,11 @@ https://github.com/Open-Science-Student-Support-Group/osssg-website
 4. Choose Git
 5. Provide the (forked) repository URL then click Create Project
 
-#### VS Code
+#### RStudio (usethis)
+
+Follow the [pull request helpers](https://usethis.r-lib.org/articles/pr-functions.html) instructions.
+
+#### VS Code (built-in Git)
 
 If you do not have write privileges for the repository, first fork it on GitHub, then copy the URL of your fork and follow the [setting up a repository instructions](https://code.visualstudio.com/docs/editor/github#_setting-up-a-repository). If you do have write privileges, then copy the URL for our website's repository and follow the setting up a repository instructions.
 
@@ -171,23 +179,37 @@ The development server will automatically re-render input files whenever they ch
 
 ## The workflow
 
-Create a branch for the new post
+There are five steps to the new post workflow. The sections below will take you through each step.
 
-### 1. Creating a new GitHub branch
+### 1. Create a new GitHub branch
+
+First you'll want to create a new branch that you can work on your changes in.
 
 ::: {.panel-tabset}
 #### GitHub Desktop
 
+Follow the [creating a branch](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/managing-branches#creating-a-branch) instructions.
 
-#### RStudio
+#### RStudio (built-in Git)
 
+Go to the (forked) website repository in your browser and [create a new branch](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository). Give the branch an informative name such as `post_new-post-workflow`.
 
-#### VS Code
+Now do the following in RStudio:
 
+1. Go to the Git tab
+2. Click the Pull button in the Git tab
+3. In the upper right corner of the Git tab, click `main`, then switch to the branch you created
 
+#### RStudio (usethis)
+
+Follow the [pull request helpers](https://usethis.r-lib.org/articles/pr-functions.html) instructions.
+
+#### VS Code (built-in Git)
+
+See the [branches and tags](https://code.visualstudio.com/docs/editor/versioncontrol#_branches-and-tags) section for instructions on creating a new branch.
 :::
 
-### 2. Creating a new post
+### 2. Create a new post
 
 The `_templates` directory at the root of the project contains templates you can use to create a new post. Currently there are two templates:
 
@@ -222,26 +244,128 @@ When renaming the post's directory, follow the formatting used in the template (
 
 :::
 
-### 3. Authoring a new post
+### 3. Author your new post
 
 Once you have copied the template for the new post to the listing page you want you can start editing the input file for the post. This is the `index.md` file located inside the directory for the post. Do not rename this file.
 
 Please see the [Markdown basics](https://quarto.org/docs/authoring/markdown-basics.html) page under the Authoring section in the Quarto [Guide](https://quarto.org/docs/guide/) for details on writing in Markdown, and the Websites section under the guide for website-specific concerns.
 
-### 4. Rendering the site
+If you want to add icons or emojis to your post, see:
 
-Once you are happy with your post you can render the site to prepare for publishing by running the following command in the Terminal pane in RStudio:
+- [FontAwesome icons](https://fontawesome.com/v5/search?m=free)
+- [Markdown emoji guide](https://gist.github.com/rxaviers/7360908)
+
+::: {.callout-note}
+If you are adding files to your post, such as images, try to reduce the size of the files if you can (e.g., by using image compression/optimization). Large files cause pages to load slower.
+:::
+
+### 4. Commit and push your changes
+
+When you are happy with your new post, run the following command in the RStudio or VS Code terminal:
 
 ```default
 quarto render
 ```
 
-### 5. Committing your changes
+This will render all the output files for the site, including your new post. Now you’re ready to commit these changes to your branch. You’ll want to commit the following changes at minimum:
 
-TODO
+- The input file for your new post
+- Any additional files your new post relies on (e.g., images)
+- Everything in the `_site` directory
+
+For your commit message, choose something informative such as “Add ‘new post workflow’ post under documents”, replacing certain parts here with details relevant to your own post.
+
+::: {.panel-tabset}
+#### GitHub Desktop
+
+See the [reviewing and committing changes to your project](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project) guide for instructions.
+
+#### RStudio (built-in Git)
+
+In the Git pane:
+
+1. Check all the files you want to commit
+2. Click the Commit button to open the commit pane
+3. Write your commit message
+4. Click the Commit button in the commit pane
+5. Click the Push button
+
+::: {.callout-note}
+In the commit pane:
+
+- A yellow box indicates a file that hasn’t been committed before
+- A blue box indicates a file that is being modified
+- A red box indicates a file that is being deleted
+- A purple box indicates a file that had been relocated or renamed
+:::
+
+#### RStudio (usethis)
+
+In the Git pane:
+
+1. Check all the files you want to commit
+2. Click the Commit button to open the commit pane
+3. Write your commit message
+4. Click the Commit button in the commit pane
+5. Follow the [submit pull request](https://usethis.r-lib.org/articles/pr-functions.html#submit-pull-request) instructions
+
+::: {.callout-note}
+In the commit pane:
+
+- A yellow box indicates a file that hasn’t been committed before
+- A blue box indicates a file that is being modified
+- A red box indicates a file that is being deleted
+- A purple box indicates a file that had been relocated or renamed
+:::
+
+#### VS Code (built-in Git)
+
+Follow the [commit](https://code.visualstudio.com/docs/editor/versioncontrol#_commit) instructions, then Push your changes after committing them.
+
+:::
+
+### 5. Submit a Pull Request
+
+Once you have committed your changes to your new post branch, you can create a pull request to add these changes to the `main` branch of our website’s GitHub repository. 
+
+After you create the pull request, Netlify will create a [Deploy Preview](https://docs.netlify.com/site-deploys/deploy-previews/) that you and your reviewer can use to preview your changes to the site before publishing them to production.
+
+::: {.panel-tabset}
+#### GitHub Desktop
+
+Follow the [creating a pull request](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/working-with-your-remote-repository-on-github-or-github-enterprise/creating-an-issue-or-pull-request#creating-a-pull-request) instructions.
+
+#### RStudio (built-in Git)
+
+Follow the [creating a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) instructions.
+
+#### RStudio (usethis)
+
+Follow the [pull request helpers](https://usethis.r-lib.org/articles/pr-functions.html) instructions
+
+#### VS Code (built-in Git)
+
+Follow the [creating pull requests](https://code.visualstudio.com/docs/editor/github#_creating-pull-requests) instructions
+:::
+
+## Cleaning up
+
+If you forked our GitHub repository to make a new post, after your Pull Request is merged into the `main` branch of our GitHub repository you will want to clean up your fork. You have two options here:
+
+- Delete your forked repository
+- Delete the branch in your forked repository
+
+The first option is better if you don’t plan to post again on our site. The second option is better if you do plan to post again on our new site since it means less work for your next post.
+
+## Your next post
+
+If you deleted your forked repository, then simply repeat the steps in this guide all over again starting from the [Clone the website repository](#clone-the-website-repository) section.
+
+If you kept your forked repository and just deleted the branch you made in it, first [Fetch the upstream changes](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) from the `main` branch of our website's repository, then repeat the steps in this guide starting from the [workflow](#the-workflow) section.
 
 ## Resources
 
 - [GitHub Learning Resources](https://docs.github.com/en/get-started/quickstart/git-and-github-learning-resources)
 - [Deploy previews with Netlify](https://www.pipinghotdata.com/posts/2021-04-01-deploy-previews-with-netlifly/)
-- [FontAwesome icons](https://fontawesome.com/v5/search?m=free)
+- [Pull Request Flow with usethis](https://www.garrickadenbuie.com/blog/pull-request-flow-usethis/?interactive=1&steps=)
+
