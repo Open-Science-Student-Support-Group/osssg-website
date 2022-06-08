@@ -13,7 +13,7 @@ categories:
 | __Location__: University of Calgary
 
 ::: {.tool}
-<a href="https://github.com/mccarthy-m-g/osssg-website-workshop" role="button" class="btn btn-outline-dark">
+<a href="https://github.com/mccarthy-m-g/osssg-website-workshop" role="button" class="btn">
 <i class="fab fa-github"></i>
 Materials
 </a>
