@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Michael McCarthy">
-<meta name="dcterms.date" content="2022-04-28">
+<meta name="dcterms.date" content="2022-06-08">
 
-<title>Open Science Student Support Group - New Post Workflow</title>
+<title>OSSSG - New Post Workflow</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -17,6 +17,69 @@ span.underline{text-decoration: underline;}
 div.column{display: inline-block; vertical-align: top; width: 50%;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -70,7 +133,7 @@ ul.task-list{list-style: none;}
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <a class="navbar-brand" href="../../../index.html">
-    <span class="navbar-title">Open Science Student Support Group</span>
+    <span class="navbar-title">OSSSG</span>
   </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
@@ -117,7 +180,29 @@ ul.task-list{list-style: none;}
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link active" data-scroll-target="#prerequisites">Prerequisites</a></li>
+  <li><a href="#what-youll-learn" id="toc-what-youll-learn" class="nav-link active" data-scroll-target="#what-youll-learn">What you’ll learn</a></li>
+  <li><a href="#how-the-website-works" id="toc-how-the-website-works" class="nav-link" data-scroll-target="#how-the-website-works">How the website works</a></li>
+  <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites">Prerequisites</a>
+  <ul class="collapse">
+  <li><a href="#set-up-quarto" id="toc-set-up-quarto" class="nav-link" data-scroll-target="#set-up-quarto">Set up Quarto</a></li>
+  <li><a href="#set-up-github" id="toc-set-up-github" class="nav-link" data-scroll-target="#set-up-github">Set up GitHub</a></li>
+  <li><a href="#clone-the-website-repository" id="toc-clone-the-website-repository" class="nav-link" data-scroll-target="#clone-the-website-repository">Clone the website repository</a></li>
+  </ul></li>
+  <li><a href="#starting-up" id="toc-starting-up" class="nav-link" data-scroll-target="#starting-up">Starting up</a>
+  <ul class="collapse">
+  <li><a href="#opening-the-project" id="toc-opening-the-project" class="nav-link" data-scroll-target="#opening-the-project">Opening the project</a></li>
+  <li><a href="#previewing-the-site" id="toc-previewing-the-site" class="nav-link" data-scroll-target="#previewing-the-site">Previewing the site</a></li>
+  </ul></li>
+  <li><a href="#the-workflow" id="toc-the-workflow" class="nav-link" data-scroll-target="#the-workflow">The workflow</a>
+  <ul class="collapse">
+  <li><a href="#create-a-new-github-branch" id="toc-create-a-new-github-branch" class="nav-link" data-scroll-target="#create-a-new-github-branch">1. Create a new GitHub branch</a></li>
+  <li><a href="#create-a-new-post" id="toc-create-a-new-post" class="nav-link" data-scroll-target="#create-a-new-post">2. Create a new post</a></li>
+  <li><a href="#author-your-new-post" id="toc-author-your-new-post" class="nav-link" data-scroll-target="#author-your-new-post">3. Author your new post</a></li>
+  <li><a href="#commit-and-push-your-changes" id="toc-commit-and-push-your-changes" class="nav-link" data-scroll-target="#commit-and-push-your-changes">4. Commit and push your changes</a></li>
+  <li><a href="#submit-a-pull-request" id="toc-submit-a-pull-request" class="nav-link" data-scroll-target="#submit-a-pull-request">5. Submit a Pull Request</a></li>
+  </ul></li>
+  <li><a href="#cleaning-up" id="toc-cleaning-up" class="nav-link" data-scroll-target="#cleaning-up">Cleaning up</a></li>
+  <li><a href="#your-next-post" id="toc-your-next-post" class="nav-link" data-scroll-target="#your-next-post">Your next post</a></li>
   <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/Open-Science-Student-Support-Group/osssg-website/edit/main/documents/posts/new-post-workflow/index.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/Open-Science-Student-Support-Group/osssg-website/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
@@ -130,6 +215,7 @@ ul.task-list{list-style: none;}
 <h1 class="title">New Post Workflow</h1>
   <div class="quarto-categories">
     <div class="quarto-category">tutorials</div>
+    <div class="quarto-category">website</div>
   </div>
   </div>
 
@@ -149,7 +235,7 @@ ul.task-list{list-style: none;}
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 28, 2022</p>
+      <p class="date">June 8, 2022</p>
     </div>
   </div>
     
@@ -158,17 +244,427 @@ ul.task-list{list-style: none;}
 
 </header>
 
+<section id="what-youll-learn" class="level2">
+<h2 class="anchored" data-anchor-id="what-youll-learn">What you’ll learn</h2>
+<p>This document will guide you through the process of making new posts on our website. Here the term <code>post</code> refers to any page on the website that is collected under a <a href="https://quarto.org/docs/websites/website-listings.html">listing page</a>. For example, this document is a post that is collected under the <code>documents</code> listing page. The listing pages for this website include:</p>
+<ul>
+<li><code>documents</code></li>
+<li><code>events</code></li>
+<li><code>news</code></li>
+</ul>
+<p>You can make new posts under any of these listing pages following the workflow described in this document.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You can also follow the general workflow described in this document to make other changes to the website.</p>
+</div>
+</div>
+</section>
+<section id="how-the-website-works" class="level2">
+<h2 class="anchored" data-anchor-id="how-the-website-works">How the website works</h2>
+<p>The OSSSG website is built using <a href="https://quarto.org">Quarto</a>, and the source files for the website are managed on <a href="https://github.com">GitHub</a>. The GitHub repository for the website is located at <a href="https://github.com/Open-Science-Student-Support-Group/osssg-website" class="uri">https://github.com/Open-Science-Student-Support-Group/osssg-website</a>.</p>
+<p>If you navigate to the GitHub repository you can view the source files for the website. The source files for the website fall into two broad categories:</p>
+<ul>
+<li>Input files</li>
+<li>Output files</li>
+</ul>
+<p><strong>Input files</strong> provide the scaffolding for the website, containing things such as settings for pages, written content, image files, and so forth. <strong>Output files</strong> contain the content that we publish to the web. This content is <a href="https://quarto.org/docs/websites/publishing-websites.html">rendered by Quarto</a> from the website’s input input files, then written to the <code>_site</code> directory. The <code>_site</code> directory contains the output files for the website (indeed, <em>it is the website!</em>); everything else can be thought of as an input file.</p>
+<p>We publish the content in the <code>_site</code> directory to the web using <a href="https://www.netlify.com/">Netlify</a>, which is integrated with the website’s GitHub repository. Whenever a new commit is made on the <code>main</code> branch of the GitHub repository, Netlify will publish the content in the <code>_site</code> directory to the web.</p>
+<p>Thus, the basic new post workflow involves:</p>
+<ol type="1">
+<li>Creating an input file for the new post</li>
+<li>Rendering the site to update the <code>_site</code> directory to include the new post</li>
+<li>Committing the input file and <code>_site</code> directory to the <code>main</code> branch of the GitHub repository to publish the new post to the web</li>
+</ol>
+<p>The remainder of this document guides you through this process.</p>
+</section>
 <section id="prerequisites" class="level2">
 <h2 class="anchored" data-anchor-id="prerequisites">Prerequisites</h2>
+<section id="set-up-quarto" class="level3">
+<h3 class="anchored" data-anchor-id="set-up-quarto">Set up Quarto</h3>
+<p>For creating and rendering new posts you will need to:</p>
 <ul>
-<li><a href="https://quarto.org/docs/get-started/">Quarto</a></li>
+<li>Install <a href="https://quarto.org/docs/get-started/">Quarto</a></li>
+<li>Install an editor to use with Quarto</li>
 </ul>
+<p>There are several editors you can use with Quarto. We recommend one of the following.</p>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">RStudio (Recommended)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Visual Studio Code</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>Install <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio</a></p>
+<p>Optionally: Read the <em>Hello, Quarto</em> <a href="https://quarto.org/docs/get-started/hello/rstudio.html">RStudio tutorial</a>. Note that if you want to run this tutorial yourself you will need to <a href="https://cloud.r-project.org/">install R</a> and the R packages used in the tutorial. However, you <strong>do not</strong> need to install R to work on our website.</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>Install:</p>
+<ul>
+<li><a href="https://code.visualstudio.com/download">Visual Studio Code</a></li>
+<li>The <a href="https://marketplace.visualstudio.com/items?itemName=quarto.quarto">Quarto VS Code Extension</a></li>
+</ul>
+<p>Optionally: Read the <em>Hello, Quarto</em> <a href="https://quarto.org/docs/get-started/hello/vscode.html">VS Code tutorial</a>. Note that if you want to run this tutorial yourself you will need to install the Python packages used in the tutorial. However, you <strong>do not</strong> need to install Python to work on our website.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="set-up-github" class="level3">
+<h3 class="anchored" data-anchor-id="set-up-github">Set up GitHub</h3>
+<p>For committing files to the website’s GitHub repository you will need:</p>
+<ul>
+<li>A <a href="https://github.com">GitHub account</a></li>
+<li>A way to connect your local computer to GitHub</li>
+</ul>
+<p>There are many ways to connect your local computer to GitHub. We recommend one of the following.</p>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">GitHub Desktop</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">RStudio</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">VS Code</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false">Command line</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p>Install <a href="(https://desktop.github.com)">GitHub Desktop</a></p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>We recommend this option if you’ve never used Git or GitHub before.</p>
+</div>
+</div>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p>Set up RStudio’s <a href="https://happygitwithr.com/rstudio-git-github.html">built-in Git support</a></p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>We recommend this option if you already use Git, GitHub, and RStudio for other work. It’s especially nice when used in tandem with the <a href="https://usethis.r-lib.org"><code>usethis</code></a> R package and its <a href="https://usethis.r-lib.org/articles/git-credentials.html">GitHub helpers</a> and <a href="https://usethis.r-lib.org/articles/pr-functions.html">Pull Request helpers</a>.</p>
+</div>
+</div>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<p>Set up VS Code’s <a href="https://code.visualstudio.com/docs/editor/github">built-in Git support</a></p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>We recommend this option if you already use Git, GitHub, and VS Code for other work.</p>
+</div>
+</div>
+</div>
+<div id="tabset-2-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-4-tab">
+<p>If you’re considering this, you don’t need our help. <span class="emoji" data-emoji="sunglasses">😎</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="clone-the-website-repository" class="level3">
+<h3 class="anchored" data-anchor-id="clone-the-website-repository">Clone the website repository</h3>
+<p>After you’ve Set up Quarto and GitHub you can <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository">clone</a> the website’s GitHub repository to your computer. If you have write privileges for the repository then you can clone the site directly; if you don’t then you will have to <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo">fork</a> the repository and then clone your forked GitHub repository to your computer.</p>
+<p>The steps to do this are a little different depending on the method you chose to connect your local computer to GitHub in the previous section. Make sure you note where you clone the website respository to on your computer so you can find it later!</p>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">GitHub Desktop</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">RStudio (built-in Git)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false">RStudio (usethis)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-4" role="tab" aria-controls="tabset-3-4" aria-selected="false">VS Code (built-in Git)</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<p>Follow the <a href="https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop">cloning and forking instructions</a>. The URL for our website’s repository is:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>https://github.com/Open-Science-Student-Support-Group/osssg-website</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<p>If you do not have write privileges for the repository, first fork it on GitHub, then copy the URL of your fork and complete the steps below. If you do have write privileges, then copy the URL for our website’s repository and complete the steps below.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>https://github.com/Open-Science-Student-Support-Group/osssg-website</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol type="1">
+<li>Open RStudio</li>
+<li>Create a New Project (from the Project of File menu)</li>
+<li>Choose to create a new project from Version Control</li>
+<li>Choose Git</li>
+<li>Provide the (forked) repository URL then click Create Project</li>
+</ol>
+</div>
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<p>Follow the <a href="https://usethis.r-lib.org/articles/pr-functions.html">pull request helpers</a> instructions.</p>
+</div>
+<div id="tabset-3-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-4-tab">
+<p>If you do not have write privileges for the repository, first fork it on GitHub, then copy the URL of your fork and follow the <a href="https://code.visualstudio.com/docs/editor/github#_setting-up-a-repository">setting up a repository instructions</a>. If you do have write privileges, then copy the URL for our website’s repository and follow the setting up a repository instructions.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>https://github.com/Open-Science-Student-Support-Group/osssg-website</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="starting-up" class="level2">
+<h2 class="anchored" data-anchor-id="starting-up">Starting up</h2>
+<section id="opening-the-project" class="level3">
+<h3 class="anchored" data-anchor-id="opening-the-project">Opening the project</h3>
+<p>With the prerequisites complete, you are ready to work on the website. The method to open the project depends on the editor you chose.</p>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">RStudio</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">Visual Studio Code</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<p>Double-click the <code>osssg-website.Rproj</code> file located in the root directory of the project. This will start an RStudio session for the project.</p>
+</div>
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<p>Open VS Code, then open the project’s folder inside VS Code, following the instructions <a href="https://code.visualstudio.com/docs/editor/workspaces">here</a>. This will start a VS Code workspace for the project.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="previewing-the-site" class="level3">
+<h3 class="anchored" data-anchor-id="previewing-the-site">Previewing the site</h3>
+<p>After opening the site you can open a live-reloading development server on your computer to preview the website while you work on it. Start the server by running the following in the terminal of RStudio or VS Code:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>quarto preview</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The development server will automatically re-render input files whenever they change. For more details see the Quarto <a href="https://quarto.org/docs/websites/index.html#workflow">website workflow documentation</a>, and the sections on previewing with <a href="https://quarto.org/docs/tools/rstudio.html#render-and-preview">RStudio</a> and <a href="https://quarto.org/docs/tools/vscode.html#render-and-preview">VS Code</a>.</p>
+</section>
+</section>
+<section id="the-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="the-workflow">The workflow</h2>
+<p>There are five steps to the new post workflow. The sections below will take you through each step.</p>
+<section id="create-a-new-github-branch" class="level3">
+<h3 class="anchored" data-anchor-id="create-a-new-github-branch">1. Create a new GitHub branch</h3>
+<p>First you’ll want to create a new branch that you can work on your changes in.</p>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true">GitHub Desktop</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false">RStudio (built-in Git)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-3" role="tab" aria-controls="tabset-5-3" aria-selected="false">RStudio (usethis)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-4" role="tab" aria-controls="tabset-5-4" aria-selected="false">VS Code (built-in Git)</a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
+<p>Follow the <a href="https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/managing-branches#creating-a-branch">creating a branch</a> instructions.</p>
+</div>
+<div id="tabset-5-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-2-tab">
+<p>Go to the (forked) website repository in your browser and <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository">create a new branch</a>. Give the branch an informative name such as <code>post_new-post-workflow</code>.</p>
+<p>Now do the following in RStudio:</p>
+<ol type="1">
+<li>Go to the Git tab</li>
+<li>Click the Pull button in the Git tab</li>
+<li>In the upper right corner of the Git tab, click <code>main</code>, then switch to the branch you created</li>
+</ol>
+</div>
+<div id="tabset-5-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-3-tab">
+<p>Follow the <a href="https://usethis.r-lib.org/articles/pr-functions.html">pull request helpers</a> instructions.</p>
+</div>
+<div id="tabset-5-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-4-tab">
+<p>See the <a href="https://code.visualstudio.com/docs/editor/versioncontrol#_branches-and-tags">branches and tags</a> section for instructions on creating a new branch.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="create-a-new-post" class="level3">
+<h3 class="anchored" data-anchor-id="create-a-new-post">2. Create a new post</h3>
+<p>The <code>_templates</code> directory at the root of the project contains templates you can use to create a new post. Currently there are two templates:</p>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-6-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-1" role="tab" aria-controls="tabset-6-1" aria-selected="true">Event post template</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-2" role="tab" aria-controls="tabset-6-2" aria-selected="false">Generic post template</a></li></ul>
+<div class="tab-content">
+<div id="tabset-6-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-6-1-tab">
+<p>The event post template is named <code>1999-01-24_event-post</code>. This name will be used for the post in its URL on the site.</p>
+<p>Modifying the template for new posts:</p>
+<ol type="1">
+<li>Copy the <code>1999-01-24_event-post</code> directory into the <code>/events/posts/</code> directory</li>
+<li>Rename the <code>1999-01-24_event-post</code> directory with the appropriate post date and event name</li>
+<li>Open the <code>1999-01-24_event-post/index.md</code> file, edit and modify as needed</li>
+</ol>
+<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>When renaming the post’s directory, follow the formatting used in the template (i.e., <code>data_post-name</code>). This keeps the posts organized and easy to parse. Do not include spaces anywhere in the name, only underscores (which should separate the date and post name) and hyphens (which take the place of spaces) are allowed.</p>
+</div>
+</div>
+</div>
+<div id="tabset-6-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-2-tab">
+<p>The generic post template is named <code>2000-11-18_generic-post</code>. This name will be used for the post in its URL on the site.</p>
+<p>Modifying the template for new posts:</p>
+<ol type="1">
+<li>Copy the <code>2000-11-18_generic-post</code> directory into the <code>/posts/</code> directory for the listing page you want to make a post in (e.g., <code>news</code> or <code>documents</code>)</li>
+<li>Rename the <code>1999-01-24_event-post</code> directory with the appropriate post date and post name</li>
+<li>Open the <code>2000-11-18_generic-post/index.md</code> file, edit and modify as needed</li>
+</ol>
+<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>When renaming the post’s directory, follow the formatting used in the template (i.e., <code>data_post-name</code>). This keeps the posts organized and easy to parse. Do not include spaces anywhere in the name, only underscores (which should separate the date and post name) and hyphens (which take the place of spaces) are allowed.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="author-your-new-post" class="level3">
+<h3 class="anchored" data-anchor-id="author-your-new-post">3. Author your new post</h3>
+<p>Once you have copied the template for the new post to the listing page you want you can start editing the input file for the post. This is the <code>index.md</code> file located inside the directory for the post. Do not rename this file.</p>
+<p>Please see the <a href="https://quarto.org/docs/authoring/markdown-basics.html">Markdown basics</a> page under the Authoring section in the Quarto <a href="https://quarto.org/docs/guide/">Guide</a> for details on writing in Markdown, and the Websites section under the guide for website-specific concerns.</p>
+<p>If you want to add icons or emojis to your post, see:</p>
+<ul>
+<li><a href="https://fontawesome.com/v5/search?m=free">FontAwesome icons</a></li>
+<li><a href="https://gist.github.com/rxaviers/7360908">Markdown emoji guide</a></li>
+</ul>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you are adding files to your post, such as images, try to reduce the size of the files if you can (e.g., by using image compression/optimization). Large files cause pages to load slower.</p>
+</div>
+</div>
+</section>
+<section id="commit-and-push-your-changes" class="level3">
+<h3 class="anchored" data-anchor-id="commit-and-push-your-changes">4. Commit and push your changes</h3>
+<p>When you are happy with your new post, run the following command in the RStudio or VS Code terminal:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>quarto render</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This will render all the output files for the site, including your new post. Now you’re ready to commit these changes to your branch. You’ll want to commit the following changes at minimum:</p>
+<ul>
+<li>The input file for your new post</li>
+<li>Any additional files your new post relies on (e.g., images)</li>
+<li>Everything in the <code>_site</code> directory</li>
+</ul>
+<p>For your commit message, choose something informative such as “Add ‘new post workflow’ post under documents”, replacing certain parts here with details relevant to your own post.</p>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-7-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-1" role="tab" aria-controls="tabset-7-1" aria-selected="true">GitHub Desktop</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-2" role="tab" aria-controls="tabset-7-2" aria-selected="false">RStudio (built-in Git)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-3" role="tab" aria-controls="tabset-7-3" aria-selected="false">RStudio (usethis)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-4" role="tab" aria-controls="tabset-7-4" aria-selected="false">VS Code (built-in Git)</a></li></ul>
+<div class="tab-content">
+<div id="tabset-7-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-7-1-tab">
+<p>See the <a href="https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project">reviewing and committing changes to your project</a> guide for instructions.</p>
+</div>
+<div id="tabset-7-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-2-tab">
+<p>In the Git pane:</p>
+<ol type="1">
+<li>Check all the files you want to commit</li>
+<li>Click the Commit button to open the commit pane</li>
+<li>Write your commit message</li>
+<li>Click the Commit button in the commit pane</li>
+<li>Click the Push button</li>
+</ol>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In the commit pane:</p>
+<ul>
+<li>A yellow box indicates a file that hasn’t been committed before</li>
+<li>A blue box indicates a file that is being modified</li>
+<li>A red box indicates a file that is being deleted</li>
+<li>A purple box indicates a file that had been relocated or renamed</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="tabset-7-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-3-tab">
+<p>In the Git pane:</p>
+<ol type="1">
+<li>Check all the files you want to commit</li>
+<li>Click the Commit button to open the commit pane</li>
+<li>Write your commit message</li>
+<li>Click the Commit button in the commit pane</li>
+<li>Follow the <a href="https://usethis.r-lib.org/articles/pr-functions.html#submit-pull-request">submit pull request</a> instructions</li>
+</ol>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In the commit pane:</p>
+<ul>
+<li>A yellow box indicates a file that hasn’t been committed before</li>
+<li>A blue box indicates a file that is being modified</li>
+<li>A red box indicates a file that is being deleted</li>
+<li>A purple box indicates a file that had been relocated or renamed</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="tabset-7-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-4-tab">
+<p>Follow the <a href="https://code.visualstudio.com/docs/editor/versioncontrol#_commit">commit</a> instructions, then Push your changes after committing them.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="submit-a-pull-request" class="level3">
+<h3 class="anchored" data-anchor-id="submit-a-pull-request">5. Submit a Pull Request</h3>
+<p>Once you have committed your changes to your new post branch, you can create a pull request to add these changes to the <code>main</code> branch of our website’s GitHub repository.</p>
+<p>After you create the pull request, Netlify will create a <a href="https://docs.netlify.com/site-deploys/deploy-previews/">Deploy Preview</a> that you and your reviewer can use to preview your changes to the site before publishing them to production.</p>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-8-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-1" role="tab" aria-controls="tabset-8-1" aria-selected="true">GitHub Desktop</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-2" role="tab" aria-controls="tabset-8-2" aria-selected="false">RStudio (built-in Git)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-3" role="tab" aria-controls="tabset-8-3" aria-selected="false">RStudio (usethis)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-4" role="tab" aria-controls="tabset-8-4" aria-selected="false">VS Code (built-in Git)</a></li></ul>
+<div class="tab-content">
+<div id="tabset-8-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-8-1-tab">
+<p>Follow the <a href="https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/working-with-your-remote-repository-on-github-or-github-enterprise/creating-an-issue-or-pull-request#creating-a-pull-request">creating a pull request</a> instructions.</p>
+</div>
+<div id="tabset-8-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-8-2-tab">
+<p>Follow the <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request">creating a pull request</a> instructions.</p>
+</div>
+<div id="tabset-8-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-8-3-tab">
+<p>Follow the <a href="https://usethis.r-lib.org/articles/pr-functions.html">pull request helpers</a> instructions</p>
+</div>
+<div id="tabset-8-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-8-4-tab">
+<p>Follow the <a href="https://code.visualstudio.com/docs/editor/github#_creating-pull-requests">creating pull requests</a> instructions</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="cleaning-up" class="level2">
+<h2 class="anchored" data-anchor-id="cleaning-up">Cleaning up</h2>
+<p>If you forked our GitHub repository to make a new post, after your Pull Request is merged into the <code>main</code> branch of our GitHub repository you will want to clean up your fork. You have two options here:</p>
+<ul>
+<li>Delete your forked repository</li>
+<li>Delete the branch in your forked repository</li>
+</ul>
+<p>The first option is better if you don’t plan to post again on our site. The second option is better if you do plan to post again on our new site since it means less work for your next post.</p>
+</section>
+<section id="your-next-post" class="level2">
+<h2 class="anchored" data-anchor-id="your-next-post">Your next post</h2>
+<p>If you deleted your forked repository, then simply repeat the steps in this guide all over again starting from the <a href="#clone-the-website-repository">Clone the website repository</a> section.</p>
+<p>If you kept your forked repository and just deleted the branch you made in it, first <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork">Fetch the upstream changes</a> from the <code>main</code> branch of our website’s repository, then repeat the steps in this guide starting from the <a href="#the-workflow">workflow</a> section.</p>
 </section>
 <section id="resources" class="level2">
 <h2 class="anchored" data-anchor-id="resources">Resources</h2>
 <ul>
-<li><a href="https://www.pipinghotdata.com/posts/2021-04-01-deploy-previews-with-netlifly/">Deploy previews with Netlifly</a></li>
-<li><a href="https://fontawesome.com/v5/search?m=free">FontAwesome icons</a></li>
+<li><a href="https://docs.github.com/en/get-started/quickstart/git-and-github-learning-resources">GitHub Learning Resources</a></li>
+<li><a href="https://www.pipinghotdata.com/posts/2021-04-01-deploy-previews-with-netlifly/">Deploy previews with Netlify</a></li>
+<li><a href="https://www.garrickadenbuie.com/blog/pull-request-flow-usethis/?interactive=1&amp;steps=">Pull Request Flow with usethis</a></li>
 </ul>
 
 

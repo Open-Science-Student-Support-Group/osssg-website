@@ -6,9 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2022-04-28">
+<meta name="author" content="Michael McCarthy">
+<meta name="dcterms.date" content="2022-06-08">
 
-<title>OSSSG - Facilitators Guide</title>
+<title>OSSSG - Website Basics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -116,21 +117,22 @@ ul.task-list{list-style: none;}
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#main-facilitator" id="toc-main-facilitator" class="nav-link active" data-scroll-target="#main-facilitator">Main Facilitator</a></li>
-  <li><a href="#zoom-facilitator" id="toc-zoom-facilitator" class="nav-link" data-scroll-target="#zoom-facilitator">Zoom Facilitator</a></li>
-  <li><a href="#breakout-facilitator" id="toc-breakout-facilitator" class="nav-link" data-scroll-target="#breakout-facilitator">Breakout Facilitator</a></li>
-  <li><a href="#facilitation-tips-adapted-from-facilitating-group-discussions" id="toc-facilitation-tips-adapted-from-facilitating-group-discussions" class="nav-link" data-scroll-target="#facilitation-tips-adapted-from-facilitating-group-discussions">Facilitation tips (adapted from <span>Facilitating Group Discussions</span>)</a></li>
+  <li><a href="#how-the-website-works" id="toc-how-the-website-works" class="nav-link active" data-scroll-target="#how-the-website-works">How the website works</a></li>
+  <li><a href="#site-file-structure" id="toc-site-file-structure" class="nav-link" data-scroll-target="#site-file-structure">Site file structure</a></li>
+  <li><a href="#creating-and-editing-content" id="toc-creating-and-editing-content" class="nav-link" data-scroll-target="#creating-and-editing-content">Creating and editing content</a></li>
+  <li><a href="#learning-more-about-quarto" id="toc-learning-more-about-quarto" class="nav-link" data-scroll-target="#learning-more-about-quarto">Learning more about Quarto</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/Open-Science-Student-Support-Group/osssg-website/edit/main/documents/posts/facilitators-guide/index.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/Open-Science-Student-Support-Group/osssg-website/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/Open-Science-Student-Support-Group/osssg-website/edit/main/documents/posts/website-basics/index.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/Open-Science-Student-Support-Group/osssg-website/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Facilitators Guide</h1>
+<h1 class="title">Website Basics</h1>
   <div class="quarto-categories">
     <div class="quarto-category">tutorials</div>
+    <div class="quarto-category">website</div>
   </div>
   </div>
 
@@ -140,11 +142,17 @@ ul.task-list{list-style: none;}
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Michael McCarthy </p>
+          </div>
+  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 28, 2022</p>
+      <p class="date">June 8, 2022</p>
     </div>
   </div>
     
@@ -153,53 +161,57 @@ ul.task-list{list-style: none;}
 
 </header>
 
-<p>Thank you for volunteering as a facilitator! This guide is designed to describe your role and provide helpful tips for facilitating.</p>
-<section id="main-facilitator" class="level2">
-<h2 class="anchored" data-anchor-id="main-facilitator">Main Facilitator</h2>
-<p>The role of the main facilitator is to serve as the emcee for the session. They are responsible for providing a land acknowledgement at the beginning of the session, leading the group introduction/check-in, and managing the agenda for the session. A session agenda will be provided to you, along with a land acknowledgement script and opening and closing group activities. If you would like to customize any of these elements, just let the session organizers know and they would be happy to help customize it for you!</p>
+<section id="how-the-website-works" class="level2">
+<h2 class="anchored" data-anchor-id="how-the-website-works">How the website works</h2>
+<p>The OSSSG website is built using <a href="https://quarto.org">Quarto</a>, and the source files for the website are managed on <a href="https://github.com">GitHub</a>. The GitHub repository for the website is located at <a href="https://github.com/Open-Science-Student-Support-Group/osssg-website" class="uri">https://github.com/Open-Science-Student-Support-Group/osssg-website</a>.</p>
+<p>If you navigate to the GitHub repository you can view the source files for the website. The source files for the website fall into two broad categories:</p>
+<ul>
+<li>Input files</li>
+<li>Output files</li>
+</ul>
+<p><strong>Input files</strong> provide the scaffolding for the website, containing things such as settings for pages, written content, image files, and so forth. <strong>Output files</strong> contain the content that we publish to the web. This content is <a href="https://quarto.org/docs/websites/publishing-websites.html">rendered by Quarto</a> from the website’s input input files, then written to the <code>_site</code> directory. The <code>_site</code> directory contains the output files for the website (indeed, <em>it is the website!</em>); everything else can be thought of as an input file.</p>
+<p>We publish the content in the <code>_site</code> directory to the web using <a href="https://www.netlify.com/">Netlify</a>, which is integrated with the website’s GitHub repository. Whenever a new commit is made on the <code>main</code> branch of the GitHub repository, Netlify will publish the content in the <code>_site</code> directory to the web.</p>
 </section>
-<section id="zoom-facilitator" class="level2">
-<h2 class="anchored" data-anchor-id="zoom-facilitator">Zoom Facilitator</h2>
-<p>The role of the Zoom facilitator is to manage session attendees, breakout rooms and pairing challenge buddies for one-on-one conversations. Depending on the session, you will have one or two rounds of breakout rooms to organize, or you may have several breakout rooms to organize for our one-on-one sessions. You will be made the Host in Zoom in order to create breakout rooms, assign breakout facilitators to specific rooms, and provide time warnings before attendees need to return to the main breakout room. You will be provided with a list of registered attendees directly before the session in order to track attendance and plan breakouts. If you are responsible for creating new challenge buddy pairings (this will be made clear in the session agenda) you will need to record who was paired up so they can be matched again at the following session.</p>
-</section>
-<section id="breakout-facilitator" class="level2">
-<h2 class="anchored" data-anchor-id="breakout-facilitator">Breakout Facilitator</h2>
-<p>The role of the breakout facilitator is to help guide discussion in the breakout rooms. Discussion questions will be provided to help you guide the conversation and provide prompts for the attendees to consider. There is no need to ensure every question is addressed during the breakout, or that every attendee addresses every question - the conversation can organically grow and evolve based on what people in your breakout room are most interested in. Breakout facilitators should begin each breakout by going to each individual in the room and asking them to provide their thoughts and responses to the discussion questions, or any other thoughts that arose during the first part of the meeting. The purpose of this round is to give each person the space to offer their thoughts, before moving into a more free-flowing format. After this round is complete, the conversation can flow more organically, and the breakout facilitator should help keep the conversation on track, connect ideas that come up from the group to prompt further discussion, and stimulate conversation if there is a lull. It is helpful to provide the discussion questions in the chat when you enter the breakout room so that other attendees can remember what the discussion questions are.</p>
-</section>
-<section id="facilitation-tips-adapted-from-facilitating-group-discussions" class="level2">
-<h2 class="anchored" data-anchor-id="facilitation-tips-adapted-from-facilitating-group-discussions">Facilitation tips (adapted from <a href="https://web.stanford.edu/group/resed/resed/staffresources/RM/training/facilguide.html#situs">Facilitating Group Discussions</a>)</h2>
+<section id="site-file-structure" class="level2">
+<h2 class="anchored" data-anchor-id="site-file-structure">Site file structure</h2>
+<p>The main content for the site is stored in the following files and directories:</p>
 <ul>
-<li>Start the discussion with going around and letting everyone share their thoughts/comments about the topic. The goal is to give everyone space to speak without requiring them to. There should not be pressure for everyone to speak; anyone can pass when their turn comes. You should make sure your participants panel and the chat window is open as the facilitator, so you can see if people have provided non-verbal feedback. An example of introducing such a structure would be:
+<li><code>_quarto.yml</code> controls site-wide parameters and is where navbar and footer contents are specified</li>
+<li><code>_variables.yml</code> controls site-wide variables, such as the email used in our contact page</li>
+<li><code>index.qmd</code> is the site’s home page</li>
+<li><code>about</code>, <code>contact</code>, <code>documents</code>, <code>events</code>, and <code>news</code> contain those respective pages for the site
 <ul>
-<li>“We’ll start the discussion by going around and giving everyone a minute or two to share their thoughts to make sure everyone has a chance to be heard. Then we’ll open the floor to anyone who wants to respond or has any additional thoughts they want to share. If you don’t feel like sharing, feel free to pass when your turn comes. If you don’t wish to speak you can provide feedback through the participants panel on Zoom by selecting the red x for”no”.”</li>
+<li><code>documents</code>, <code>events</code>, and <code>news</code> are listing pages
+<ul>
+<li>The <code>index.qmd</code> file in each directory controls parameters for the post listings.</li>
 </ul></li>
-<li>It is not necessary to get through every discussion question - see them as a guide to shaping the discussion. You can offer them up as questions for the group to consider (it helps to share the questions in the chat) and you can allow the group to focus on the questions/topics that are the most interesting to them.</li>
-<li>If the discussion isn’t flowing, ask follow-up and/or probing questions, such as:
-<ul>
-<li>“Can you say a little more about…”</li>
-<li>“Can you give us an example?”</li>
-<li>Offer a comment and ask for agreement or disagreement from the group</li>
 </ul></li>
-<li>If someone is monopolizing the discussion, try redirecting with statements like:
+<li><code>404.qmd</code> is the 404 page for the site</li>
+<li><code>styles.css</code> and <code>theme.scss</code> are used for additional CSS and SASS styling for the site’s appearance, such as fonts and colours</li>
+</ul>
+<p>Other files:</p>
 <ul>
-<li>“I’d like to hear what others have to say about that” referring to what the speaker just said</li>
-<li>Ask another person a question when the speaker takes a pause</li>
-<li>Explain that you appreciate their viewpoint, but you would like to make sure everyone has a chance to contribute</li>
+<li><code>_templates</code> contains templates you can use for creating new posts for the sites various listing pages. - Please see the <code>README.md</code> file inside <code>_templates</code> or the <a href="../../../documents/posts/new-post-workflow">New Post Workflow</a> document for more information</li>
+<li><code>_common</code> includes files that are common to several pages across the site
+<ul>
+<li>Please see the <code>README.md</code> file inside <code>_common</code> for more information</li>
 </ul></li>
-<li>If someone keeps changing the subject or goes on tangents:
+<li><code>_site</code> contains the files for the rendered site
 <ul>
-<li>“That’s really interesting, how do you feel about….” and then redirect to the topic</li>
+<li>Do not modify anything in this directory directly, it’s pointless
+<ul>
+<li>Whenever you render the site it will be overwritten.</li>
 </ul></li>
-<li>If people keep interrupting:
-<ul>
-<li>Try to manage the conversation order, such as “Okay, first Erin, then Malik, then Zahara”</li>
-<li>Try to re-establish the conversation order “You make an interesting point. I’d like to finish hearing from Noor, and then I know that Ben wanted to add thoughts as well”</li>
-</ul></li>
-<li>If someone expresses judgement/hostility towards another individual:
-<ul>
-<li>Remind everyone that open science is a process, and that we are all here because we are interested in incorporating this into our work</li>
 </ul></li>
 </ul>
+</section>
+<section id="creating-and-editing-content" class="level2">
+<h2 class="anchored" data-anchor-id="creating-and-editing-content">Creating and editing content</h2>
+<p>See the <a href="../../../documents/posts/new-post-workflow">New Post Workflow</a> document.</p>
+</section>
+<section id="learning-more-about-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="learning-more-about-quarto">Learning more about Quarto</h2>
+<p>Please see the <a href="https://quarto.org/docs/get-started/">getting started</a> page for installation information, and the Quarto <a href="https://quarto.org/docs/guide/">guide</a> and <a href="https://quarto.org/docs/reference/">reference</a> for information on how the site was built and how you can modify it.</p>
 
 
 </section>

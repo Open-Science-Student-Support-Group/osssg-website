@@ -5,7 +5,7 @@
       xmlns:dc="http://purl.org/dc/elements/1.1/" 
       version="2.0">
 <channel>
-<title>Open Science Student Support Group</title>
+<title>OSSSG</title>
 <link>https://osssg.netlify.app/events/index.html</link>
 <atom:link href="https://osssg.netlify.app/events/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
@@ -24,7 +24,7 @@
 <strong>Date and Time</strong>: March 4, 2022, from 4:00 PM to 6:00 PM<br>
 <strong>Location</strong>: University of Calgary</p>
 <div class="tool">
-<p><a href="https://github.com/mccarthy-m-g/osssg-website-workshop" class="btn btn-outline-dark"> <i class="fab fa-github"></i> Materials </a></p>
+<p><a href="https://github.com/mccarthy-m-g/osssg-website-workshop" class="btn"> <i class="fab fa-github"></i> Materials </a></p>
 </div>
 <p>A website is a wonderful place for showcasing yourself, mobilizing knowledge in your learning community, building an online portfolio, or anything else you can imagine! Thanks to the power of open source software, creating a stylish website is quick, easy, and free. No programming experience required.</p>
 <p>In this workshop we will explore open source tools and workflows for creating and deploying websites. By the end of the workshop you will have your very own website up and running on the web; bring a picture and bio so you can begin to customize your site!</p>
@@ -422,7 +422,7 @@
 <strong>Location</strong>: University of Calgary</p>
 <p>event description</p>
 <div class="tool">
-<p><a href="404.md" class="btn btn-outline-dark"> <i class="fas fa-user-plus"></i> Sign Up </a></p>
+<p><a href="404.md" class="btn"> <i class="fas fa-user-plus"></i> Sign Up </a></p>
 </div>
 
 
