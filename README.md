@@ -1,5 +1,7 @@
 # OSSSG website
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/28f884ca-8a9f-4f72-ba2e-bdfcd3235d98/deploy-status)](https://app.netlify.com/sites/osssg/deploys)
+
 ## Site software
 
 The OSSSG website is built using [Quarto](https://quarto.org). If you are new to Quarto, please see the [getting started](https://quarto.org/docs/get-started/) page for installation information, and the Quarto [guide](https://quarto.org/docs/guide/) and [reference](https://quarto.org/docs/reference/) for information on how the site was built and how you can modify it. We recommend using [RStudio](https://www.rstudio.com/products/rstudio/download/#download) as your editor when working on the website, and either [GitHub Desktop](https://desktop.github.com) or RStudio's [built-in Git support](https://happygitwithr.com/rstudio-git-github.html) for version control.
