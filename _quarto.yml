@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "Open Science Student Support Group"
+  title: "OSSSG"
   site-url: https://osssg.netlify.app
   repo-url: https://github.com/Open-Science-Student-Support-Group/osssg-website
   repo-actions: [edit, issue]
@@ -13,7 +13,6 @@ website:
   #     repo: Open-Science-Student-Support-Group/osssg-website
 
   navbar:
-    background: primary
     left:
       - text: "About"
         href: about/index.qmd
@@ -33,17 +32,19 @@ website:
         aria-label: OSSSG GitHub
 
   page-footer:
+    border: false
     left: |
       Proudly supported by
       [![](/files/images/quality-money-logo.png){fig-alt="Quality Money" height=1.65em}](https://gsa.ucalgary.ca/financial-support/quality-money-program/)
     right:
       - text: "Contact"
         href: contact/index.qmd
-    background: light
 
 format:
   html:
-    theme: [minty, theme.scss]
+    theme:
+      - minty
+      - theme.scss
     css: styles.css
     toc: true
     from: markdown+emoji
