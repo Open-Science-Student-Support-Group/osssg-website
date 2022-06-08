@@ -16,7 +16,7 @@ To receive email updates of our regular meetings and public events, please sign 
 
 ::: {.tool}
 <!-- TODO: Add link -->
-<a href="mailto:..." role="button" class="btn btn-outline-dark">
+<a href="mailto:{{< var email.subscribe >}}" role="button" class="btn">
 <i class="fas fa-envelope"></i>
 Subscribe
 </a>
