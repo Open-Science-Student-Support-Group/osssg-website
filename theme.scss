@@ -27,13 +27,13 @@ $green:   #56cc9d !default;
 $teal:    #20c997 !default;
 $cyan:    #6cc3d5 !default;
 
-$primary:       #70B778 !default;
-$secondary:     #eb4b46 !default;
+$primary:       #07407b !default;
+$secondary:     #7fcdee !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         #FEFDFB !default;
+$light:         $gray-100 !default;
 $dark:          $gray-800 !default;
 
 $min-contrast-ratio:   1.45 !default;
@@ -44,9 +44,9 @@ $min-contrast-ratio:   1.45 !default;
 //
 
 // Colours
-$body-bg: $light; // The page background color.
+$body-bg: $white; // The page background color.
 $body-color: $black; // The page text color.
-$link-color: $primary; // The link color.
+$link-color: #f7931e; // The link color.
 
 // Fonts
 /*--
@@ -61,32 +61,61 @@ $h5-font-size: ; // Font size for the H5 headings.
 --*/
 
 // Navigation
-$navbar-bg: $secondary; // The background color of the navbar.
-$navbar-fg: $white; // The color of foreground elements (text and navigation) on the navbar.
-$navbar-hl: $black; // The highlight color for links in the navbar.
+$navbar-bg: $primary; // The background color of the navbar.
+$navbar-fg: $body-bg; // The color of foreground elements (text and navigation) on the navbar.
+$navbar-hl: $body-bg; // The highlight color for links in the navbar.
 $footer-bg: $light; // The background color of the footer.
 $footer-fg: $gray-600; //	The color of foreground elements (text and navigation) on the footer.
 
 /*-- scss:rules --*/
 
 // Navbar
-.navbar {
-  border-top-width: 1.0em;
-  border-top-color: $secondary;
+.navbar-brand>img {
+  vertical-align: bottom;
+  max-height: 100px;
+  width: auto;
+  padding-left: 6px;
+  padding-right: 0px;
+}
+
+// Title banner
+.quarto-title-banner {
+  background: $secondary !important;
+  .title {
+    color: $body-bg !important;
+  }
 }
 
 // Buttons
 .btn {
-  color: $primary;
-  border-color: $primary;
+  color: $link-color;
+  border-color: $link-color;
 }
 
 .btn:hover {
   color: $body-bg;
-  background-color: $primary;
+  background-color: $link-color;
 }
 
 // Members
 .mt-6 {
   margin-top: ($spacer * 2.5) !important;
+}
+
+// Pagination Buttons
+.page-item .page-link {
+color: $white;
+background-color: $secondary;
+border-color: $secondary;
+}
+
+.page-item.active .page-link,
+.page-item .page-link:hover {
+background-color: $link-color;
+border-color: $link-color;
+}
+
+.page-item.disabled .page-link {
+background-color: desaturate($secondary, 50%);
+border-color: desaturate($secondary, 50%);
 }
