@@ -361,7 +361,7 @@ The first option is better if you don’t plan to post again on our site. The se
 
 If you deleted your forked repository, then simply repeat the steps in this guide all over again starting from the [Clone the website repository](#clone-the-website-repository) section.
 
-If you kept your forked repository and just deleted the branch you made in it, first [Fetch the upstream changes](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) from the `main` branch of our website's repository, then repeat the steps in this guide starting from the [workflow](#the-workflow) section.
+If you kept your forked repository and just deleted the branch you made in it, first [Fetch the upstream changes](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) from the `main` branch of our website's repository, Pull those changes to your computer using GitHub Desktop or RStudio or VS Code's built-in Git tools, then repeat the steps in this guide starting from the [workflow](#the-workflow) section.
 
 ## Resources
 
