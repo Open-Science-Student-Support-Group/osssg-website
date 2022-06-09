@@ -64,7 +64,7 @@ $h5-font-size: ; // Font size for the H5 headings.
 $navbar-bg: $primary; // The background color of the navbar.
 $navbar-fg: $body-bg; // The color of foreground elements (text and navigation) on the navbar.
 $navbar-hl: $body-bg; // The highlight color for links in the navbar.
-$footer-bg: $light; // The background color of the footer.
+$footer-bg: $body-bg; // The background color of the footer.
 $footer-fg: $gray-600; //	The color of foreground elements (text and navigation) on the footer.
 
 /*-- scss:rules --*/
