@@ -3,6 +3,8 @@ project:
 
 website:
   title: "OSSSG"
+  # image: "files/images/logo.svg"
+  # favicon: "files/images/favicon.svg"
   site-url: https://osssg.netlify.app
   repo-url: https://github.com/Open-Science-Student-Support-Group/osssg-website
   repo-actions: [edit, issue]
@@ -13,6 +15,8 @@ website:
   #     repo: Open-Science-Student-Support-Group/osssg-website
 
   navbar:
+    # logo: "files/images/logo.svg"
+    # title: false
     left:
       - text: "About"
         href: about/index.qmd
