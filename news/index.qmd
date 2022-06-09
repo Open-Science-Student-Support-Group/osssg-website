@@ -2,6 +2,7 @@
 title: News
 listing:
   sort: "date desc"
+  page-size: 10
   contents: "posts"
   sort-ui: false
   filter-ui: false
