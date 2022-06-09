@@ -130,7 +130,7 @@
     "href": "documents/posts/new-post-workflow/index.html#your-next-post",
     "title": "New Post Workflow",
     "section": "Your next post",
-    "text": "Your next post\nIf you deleted your forked repository, then simply repeat the steps in this guide all over again starting from the Clone the website repository section.\nIf you kept your forked repository and just deleted the branch you made in it, first Fetch the upstream changes from the main branch of our website’s repository, then repeat the steps in this guide starting from the workflow section."
+    "text": "Your next post\nIf you deleted your forked repository, then simply repeat the steps in this guide all over again starting from the Clone the website repository section.\nIf you kept your forked repository and just deleted the branch you made in it, first Fetch the upstream changes from the main branch of our website’s repository, Pull those changes to your computer using GitHub Desktop or RStudio or VS Code’s built-in Git tools, then repeat the steps in this guide starting from the workflow section."
   },
   {
     "objectID": "documents/posts/new-post-workflow/index.html#resources",
@@ -312,7 +312,7 @@
     "href": "documents/index.html",
     "title": "Documents",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Last modified - Oldest\n        \n         \n          Last modified - Newest\n        \n         \n          Title\n        \n         \n          Author(s)\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nLast modified\n\n\nTitle\n\n\nAuthor(s)\n\n\n\n\n\n\nJun 8, 2022\n\n\nWebsite Basics\n\n\nMichael McCarthy\n\n\n\n\nJun 8, 2022\n\n\nNew Post Workflow\n\n\nMichael McCarthy\n\n\n\n\nApr 28, 2022\n\n\nEvent Organization\n\n\n\n\n\n\nApr 28, 2022\n\n\nFacilitators Guide\n\n\n\n\n\n\nApr 28, 2022\n\n\nTemplates\n\n\n\n\n\n\nApr 28, 2022\n\n\nOrganizational structure\n\n\nOrganizing team\n\n\n\n\nApr 28, 2022\n\n\nGetting Started with Slack\n\n\nMichael McCarthy\n\n\n\n\nApr 28, 2022\n\n\nConflict Resolution Guidelines\n\n\nConflict Resolution response team\n\n\n\n\nApr 28, 2022\n\n\nCommunity Guidelines\n\n\nOrganizing team\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Last modified - Oldest\n        \n         \n          Last modified - Newest\n        \n         \n          Title\n        \n         \n          Author(s)\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nLast modified\n\n\nTitle\n\n\nAuthor(s)\n\n\n\n\n\n\nJun 9, 2022\n\n\nNew Post Workflow\n\n\nMichael McCarthy\n\n\n\n\nJun 8, 2022\n\n\nWebsite Basics\n\n\nMichael McCarthy\n\n\n\n\nApr 28, 2022\n\n\nEvent Organization\n\n\n\n\n\n\nApr 28, 2022\n\n\nFacilitators Guide\n\n\n\n\n\n\nApr 28, 2022\n\n\nTemplates\n\n\n\n\n\n\nApr 28, 2022\n\n\nOrganizational structure\n\n\nOrganizing team\n\n\n\n\nApr 28, 2022\n\n\nGetting Started with Slack\n\n\nMichael McCarthy\n\n\n\n\nApr 28, 2022\n\n\nConflict Resolution Guidelines\n\n\nConflict Resolution response team\n\n\n\n\nApr 28, 2022\n\n\nCommunity Guidelines\n\n\nOrganizing team\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "events/posts/2021-09-16_welcome-back-open-science/index.html",
