@@ -1,7 +1,6 @@
 ---
 title: New Post Workflow
 author: Michael McCarthy
-date: last-modified
 categories:
   - tutorials
   - website
@@ -256,7 +255,9 @@ If you want to add icons or emojis to your post, see:
 - [Markdown emoji guide](https://gist.github.com/rxaviers/7360908)
 
 ::: {.callout-note}
-If you are adding files to your post, such as images, try to reduce the size of the files if you can (e.g., by using image compression/optimization). Large files cause pages to load slower.
+If you are adding files to your post, such as images, they should be placed inside the post directory. This keeps the website organized, and allows you to [link to the image](https://quarto.org/docs/authoring/markdown-basics.html#links-images) using only its file name.
+
+Try to reduce the size of the files if you can (e.g., by using image compression/optimization). Large files cause pages to load slower.
 :::
 
 ### 4. Commit and push your changes

@@ -1,7 +1,6 @@
 ---
 title: Organizational structure
 author: Organizing team
-date: last-modified
 categories:
   - documents
 ---

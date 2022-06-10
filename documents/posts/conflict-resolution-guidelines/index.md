@@ -1,7 +1,6 @@
 ---
 title: Conflict Resolution Guidelines
 author: Conflict Resolution response team
-date: last-modified
 categories:
   - guidelines
 ---

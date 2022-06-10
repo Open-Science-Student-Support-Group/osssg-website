@@ -1,6 +1,5 @@
 ---
 title: Event Organization
-date: last-modified
 categories:
   - tutorials
 ---

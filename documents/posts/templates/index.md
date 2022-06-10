@@ -1,6 +1,5 @@
 ---
 title: Templates
-date: last-modified
 ---
 
 ## Event Templates

@@ -1,7 +1,6 @@
 ---
 title: Community Guidelines
 author: Organizing team
-date: last-modified
 categories:
   - guidelines
 ---

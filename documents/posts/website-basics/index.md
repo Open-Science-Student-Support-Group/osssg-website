@@ -1,7 +1,6 @@
 ---
 title: Website Basics
 author: Michael McCarthy
-date: last-modified
 categories:
   - tutorials
   - website

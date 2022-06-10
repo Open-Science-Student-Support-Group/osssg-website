@@ -1,7 +1,6 @@
 ---
 title: Getting Started with Slack
 author: Michael McCarthy
-date: last-modified
 categories:
   - tutorials
 ---

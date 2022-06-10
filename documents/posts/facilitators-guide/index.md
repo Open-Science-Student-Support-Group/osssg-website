@@ -1,6 +1,5 @@
 ---
 title: Facilitators Guide
-date: last-modified
 categories:
   - tutorials
 ---
