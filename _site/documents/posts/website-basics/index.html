@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-0.9.349">
+<meta name="generator" content="quarto-0.9.563">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Michael McCarthy">
-<meta name="dcterms.date" content="2022-06-08">
+<meta name="dcterms.date" content="2022-06-10">
 
 <title>OSSSG - Website Basics</title>
 <style>
@@ -19,19 +19,20 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 </style>
 
+
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../../site_libs/clipboard/clipboard.min.js"></script>
-<meta name="quarto:offset" content="../../../">
 <script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
 <script src="../../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link id="quarto-text-highlighting-styles" href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
@@ -60,7 +61,7 @@ ul.task-list{list-style: none;}
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
 
-<link rel="stylesheet" href="../../../styles.css">
+<link rel="stylesheet" href="../../../assets/styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -138,8 +139,6 @@ ul.task-list{list-style: none;}
 
 
 
-
-
 <div class="quarto-title-meta">
 
     <div>
@@ -152,7 +151,7 @@ ul.task-list{list-style: none;}
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 8, 2022</p>
+      <p class="date">June 10, 2022</p>
     </div>
   </div>
     
@@ -183,11 +182,16 @@ ul.task-list{list-style: none;}
 <ul>
 <li><code>documents</code>, <code>events</code>, and <code>news</code> are listing pages
 <ul>
-<li>The <code>index.qmd</code> file in each directory controls parameters for the post listings.</li>
+<li>The <code>index.qmd</code> file in each directory controls parameters for the post listings</li>
+</ul></li>
+<li><code>contact</code> has a listing section for displaying member profiles
+<ul>
+<li>The profiles are created in the <code>members.yml</code> file in the <code>contact</code> directory</li>
+<li>Profile pictures are stored in the <code>avatars</code> directory</li>
 </ul></li>
 </ul></li>
 <li><code>404.qmd</code> is the 404 page for the site</li>
-<li><code>styles.css</code> and <code>theme.scss</code> are used for additional CSS and SASS styling for the site’s appearance, such as fonts and colours</li>
+<li><code>styles.css</code> and <code>theme.scss</code> in the <code>assets</code> directory are used for additional CSS and SASS styling for the site’s appearance, such as fonts and colours</li>
 </ul>
 <p>Other files:</p>
 <ul>
