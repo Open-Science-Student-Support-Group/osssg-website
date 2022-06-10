@@ -29,9 +29,12 @@ The main content for the site is stored in the following files and directories:
 - `index.qmd` is the site's home page
 - `about`, `contact`, `documents`, `events`, and `news` contain those respective pages for the site
   - `documents`, `events`, and `news` are listing pages
-      - The `index.qmd` file in each directory controls parameters for the post listings.
+      - The `index.qmd` file in each directory controls parameters for the post listings
+  - `contact` has a listing section for displaying member profiles
+      - The profiles are created in the `members.yml` file in the `contact` directory
+      - Profile pictures are stored in the `avatars` directory
 - `404.qmd` is the 404 page for the site
-- `styles.css` and `theme.scss` are used for additional CSS and SASS styling for the site's appearance, such as fonts and colours
+- `styles.css` and `theme.scss` in the `assets` directory are used for additional CSS and SASS styling for the site's appearance, such as fonts and colours
 
 Other files:
 
