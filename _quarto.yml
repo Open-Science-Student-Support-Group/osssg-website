@@ -48,8 +48,8 @@ format:
   html:
     theme:
       - minty
-      - theme.scss
-    css: styles.css
+      - assets/theme.scss
+    css: assets/styles.css
     toc: true
     from: markdown+emoji
     link-external-newwindow: true
