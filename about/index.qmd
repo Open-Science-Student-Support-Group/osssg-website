@@ -4,6 +4,8 @@ title: "About"
 about:
   id: hero-heading
   template: jolla
+  
+title-block-banner: true
 ---
 
 :::{#hero-heading}
