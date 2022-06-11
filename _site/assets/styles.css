@@ -8,6 +8,16 @@
   margin-left: -0.055em;
 }
 
+/* About */
+div.quarto-about-jolla {
+  margin-top: 5%;
+  padding-bottom: 10%;
+}
+
+.about-image {
+  text-align: center !important;
+}
+
 /* Member listings */
 .list.member-listing div:last-of-type {
   border-bottom: none;
@@ -16,4 +26,9 @@
 div.member-post {
   margin-bottom: 1.5em;
   border-bottom: 1px solid #ced4da;
+}
+
+/* Alignment */
+.center {
+  text-align: center !important;
 }

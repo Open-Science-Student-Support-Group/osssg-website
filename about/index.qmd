@@ -4,15 +4,25 @@ title: "About"
 about:
   id: hero-heading
   template: jolla
+  image: ../files/images/logo.svg
+  image-width: 10em
+  image-shape: rectangle
   
 title-block-banner: true
 ---
 
-:::{#hero-heading}
+:::{#hero-heading .center}
 
-## Who We Are?
+:::{#title-block-header}
+# Open Science Student Support Group
+:::
 
 OSSSG (Oh! - Triple S – Gee) was founded in 2020 in the Department of Psychology, University of Calgary, by a group of graduate students eager to learn about different open science practices and support each other in implementing them in our own research.
+
+```{=html}
+<hr class="about-sep" style="margin: auto;">
+```
+:::
 
 ## Our Vision Statement
 
@@ -20,4 +30,4 @@ We aim to develop a thriving student-led community that is dedicated to the prom
 
 ## How Will OSSSG Uphold Our Values?
 
-:::
+TODO

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-0.9.563">
+<meta name="generator" content="quarto-0.9.570">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -65,9 +65,9 @@ ul.task-list{list-style: none;}
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-title","listing-author"],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -177,6 +177,12 @@ ul.task-list{list-style: none;}
      <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
        <option value="" disabled="" selected="" hidden="">Order By</option>
        <option value="index" data-direction="asc">Default</option>
+         <option value="listing-date-sort" data-direction="asc">
+          Last modified - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Last modified - Newest
+        </option>
          <option value="listing-title-sort" data-direction="asc">
           Title
         </option>
@@ -195,6 +201,9 @@ ul.task-list{list-style: none;}
 <thead>
 <tr>
 <th>
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Last modified</a>
+</th>
+<th>
 <a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
 </th>
 <th>
@@ -203,23 +212,10 @@ ul.task-list{list-style: none;}
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-categories="tutorials" data-listing-file-modified-sort="1654880874382" data-listing-reading-time-sort="5.205" data-listing-title-sort="Getting Started with Slack" data-listing-filename-sort="index.md">
-<td class="listing-title">
-<a href="../documents/posts/slack-getting-started/index.html" class="title">Getting Started with Slack</a>
+<tr data-index="0" data-categories="tutorials,website" data-listing-date-sort="1654883429000" data-listing-file-modified-sort="1654883429646" data-listing-reading-time-sort="10.72" data-listing-title-sort="New Post Workflow" data-listing-filename-sort="index.md">
+<td class="listing-date">
+Jun 10, 2022
 </td>
-<td class="listing-author">
-Michael McCarthy
-</td>
-</tr>
-<tr data-index="1" data-categories="guidelines" data-listing-file-modified-sort="1654880945171" data-listing-reading-time-sort="9.185" data-listing-title-sort="Community Guidelines" data-listing-filename-sort="index.md">
-<td class="listing-title">
-<a href="../documents/posts/community-guidelines/index.html" class="title">Community Guidelines</a>
-</td>
-<td class="listing-author">
-Organizing team
-</td>
-</tr>
-<tr data-index="2" data-categories="tutorials,website" data-listing-file-modified-sort="1654883429646" data-listing-reading-time-sort="10.72" data-listing-title-sort="New Post Workflow" data-listing-filename-sort="index.md">
 <td class="listing-title">
 <a href="../documents/posts/new-post-workflow/index.html" class="title">New Post Workflow</a>
 </td>
@@ -227,22 +223,10 @@ Organizing team
 Michael McCarthy
 </td>
 </tr>
-<tr data-index="3" data-categories="tutorials" data-listing-file-modified-sort="1654880909304" data-listing-reading-time-sort="4.555" data-listing-title-sort="Facilitators Guide" data-listing-filename-sort="index.md">
-<td class="listing-title">
-<a href="../documents/posts/facilitators-guide/index.html" class="title">Facilitators Guide</a>
+<tr data-index="1" data-categories="tutorials,website" data-listing-date-sort="1654882848000" data-listing-file-modified-sort="1654882848377" data-listing-reading-time-sort="2.435" data-listing-title-sort="Website Basics" data-listing-filename-sort="index.md">
+<td class="listing-date">
+Jun 10, 2022
 </td>
-<td class="listing-author">
-</td>
-</tr>
-<tr data-index="4" data-categories="documents" data-listing-file-modified-sort="1654880885952" data-listing-reading-time-sort="9.83" data-listing-title-sort="Organizational structure" data-listing-filename-sort="index.md">
-<td class="listing-title">
-<a href="../documents/posts/organizational-structure/index.html" class="title">Organizational structure</a>
-</td>
-<td class="listing-author">
-Organizing team
-</td>
-</tr>
-<tr data-index="5" data-categories="tutorials,website" data-listing-file-modified-sort="1654882848377" data-listing-reading-time-sort="2.435" data-listing-title-sort="Website Basics" data-listing-filename-sort="index.md">
 <td class="listing-title">
 <a href="../documents/posts/website-basics/index.html" class="title">Website Basics</a>
 </td>
@@ -250,26 +234,78 @@ Organizing team
 Michael McCarthy
 </td>
 </tr>
-<tr data-index="6" data-categories="tutorials" data-listing-file-modified-sort="1654880917552" data-listing-reading-time-sort="8.47" data-listing-title-sort="Event Organization" data-listing-filename-sort="index.md">
+<tr data-index="2" data-categories="guidelines" data-listing-date-sort="1654880945000" data-listing-file-modified-sort="1654880945171" data-listing-reading-time-sort="9.185" data-listing-title-sort="Community Guidelines" data-listing-filename-sort="index.md">
+<td class="listing-date">
+Jun 10, 2022
+</td>
+<td class="listing-title">
+<a href="../documents/posts/community-guidelines/index.html" class="title">Community Guidelines</a>
+</td>
+<td class="listing-author">
+Organizing team
+</td>
+</tr>
+<tr data-index="3" data-categories="guidelines" data-listing-date-sort="1654880933000" data-listing-file-modified-sort="1654880933041" data-listing-reading-time-sort="7.54" data-listing-title-sort="Conflict Resolution Guidelines" data-listing-filename-sort="index.md">
+<td class="listing-date">
+Jun 10, 2022
+</td>
+<td class="listing-title">
+<a href="../documents/posts/conflict-resolution-guidelines/index.html" class="title">Conflict Resolution Guidelines</a>
+</td>
+<td class="listing-author">
+Conflict Resolution response team
+</td>
+</tr>
+<tr data-index="4" data-categories="tutorials" data-listing-date-sort="1654880917000" data-listing-file-modified-sort="1654880917552" data-listing-reading-time-sort="8.47" data-listing-title-sort="Event Organization" data-listing-filename-sort="index.md">
+<td class="listing-date">
+Jun 10, 2022
+</td>
 <td class="listing-title">
 <a href="../documents/posts/event-organization/index.html" class="title">Event Organization</a>
 </td>
 <td class="listing-author">
 </td>
 </tr>
-<tr data-index="7" data-listing-file-modified-sort="1654880865351" data-listing-reading-time-sort="0.04" data-listing-title-sort="Templates" data-listing-filename-sort="index.md">
+<tr data-index="5" data-categories="tutorials" data-listing-date-sort="1654880909000" data-listing-file-modified-sort="1654880909304" data-listing-reading-time-sort="4.555" data-listing-title-sort="Facilitators Guide" data-listing-filename-sort="index.md">
+<td class="listing-date">
+Jun 10, 2022
+</td>
 <td class="listing-title">
-<a href="../documents/posts/templates/index.html" class="title">Templates</a>
+<a href="../documents/posts/facilitators-guide/index.html" class="title">Facilitators Guide</a>
 </td>
 <td class="listing-author">
 </td>
 </tr>
-<tr data-index="8" data-categories="guidelines" data-listing-file-modified-sort="1654880933041" data-listing-reading-time-sort="7.54" data-listing-title-sort="Conflict Resolution Guidelines" data-listing-filename-sort="index.md">
+<tr data-index="6" data-categories="documents" data-listing-date-sort="1654880885000" data-listing-file-modified-sort="1654880885952" data-listing-reading-time-sort="9.83" data-listing-title-sort="Organizational structure" data-listing-filename-sort="index.md">
+<td class="listing-date">
+Jun 10, 2022
+</td>
 <td class="listing-title">
-<a href="../documents/posts/conflict-resolution-guidelines/index.html" class="title">Conflict Resolution Guidelines</a>
+<a href="../documents/posts/organizational-structure/index.html" class="title">Organizational structure</a>
 </td>
 <td class="listing-author">
-Conflict Resolution response team
+Organizing team
+</td>
+</tr>
+<tr data-index="7" data-categories="tutorials" data-listing-date-sort="1654880874000" data-listing-file-modified-sort="1654880874382" data-listing-reading-time-sort="5.205" data-listing-title-sort="Getting Started with Slack" data-listing-filename-sort="index.md">
+<td class="listing-date">
+Jun 10, 2022
+</td>
+<td class="listing-title">
+<a href="../documents/posts/slack-getting-started/index.html" class="title">Getting Started with Slack</a>
+</td>
+<td class="listing-author">
+Michael McCarthy
+</td>
+</tr>
+<tr data-index="8" data-listing-date-sort="1654880865000" data-listing-file-modified-sort="1654880865351" data-listing-reading-time-sort="0.04" data-listing-title-sort="Templates" data-listing-filename-sort="index.md">
+<td class="listing-date">
+Jun 10, 2022
+</td>
+<td class="listing-title">
+<a href="../documents/posts/templates/index.html" class="title">Templates</a>
+</td>
+<td class="listing-author">
 </td>
 </tr>
 </tbody>
