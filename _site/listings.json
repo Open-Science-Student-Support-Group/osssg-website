@@ -6,6 +6,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/news/posts/2022-07-21_content-creators-call/index.html",
       "/news/posts/2022-04-27_quality-money/index.html",
       "/events/posts/2022-03-04_creating-websites/index.html",
       "/events/posts/2021-11-19_open-science-in-industry/index.html",
@@ -28,21 +29,22 @@
   {
     "listing": "/news/index.html",
     "items": [
+      "/news/posts/2022-07-21_content-creators-call/index.html",
       "/news/posts/2022-04-27_quality-money/index.html"
     ]
   },
   {
     "listing": "/documents/index.html",
     "items": [
-      "/documents/posts/new-post-workflow/index.html",
-      "/documents/posts/website-basics/index.html",
+      "/documents/posts/slack-getting-started/index.html",
       "/documents/posts/community-guidelines/index.html",
-      "/documents/posts/conflict-resolution-guidelines/index.html",
-      "/documents/posts/event-organization/index.html",
+      "/documents/posts/new-post-workflow/index.html",
       "/documents/posts/facilitators-guide/index.html",
       "/documents/posts/organizational-structure/index.html",
-      "/documents/posts/slack-getting-started/index.html",
-      "/documents/posts/templates/index.html"
+      "/documents/posts/website-basics/index.html",
+      "/documents/posts/event-organization/index.html",
+      "/documents/posts/templates/index.html",
+      "/documents/posts/conflict-resolution-guidelines/index.html"
     ]
   },
   {

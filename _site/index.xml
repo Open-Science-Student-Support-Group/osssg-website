@@ -9,8 +9,24 @@
 <link>https://osssg.netlify.app/index.html</link>
 <atom:link href="https://osssg.netlify.app/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-0.9.570</generator>
-<lastBuildDate>Sat, 19 Feb 2022 07:00:00 GMT</lastBuildDate>
+<generator>quarto-1.0.35</generator>
+<lastBuildDate>Thu, 21 Jul 2022 06:00:00 GMT</lastBuildDate>
+<item>
+  <title>Call for content creators</title>
+  <dc:creator>Organizing team</dc:creator>
+  <link>https://osssg.netlify.app/news/posts/2022-07-21_content-creators-call/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>Please write content for this post! <span class="emoji" data-emoji="smile">😄</span></p>
+
+
+
+ ]]></description>
+  <guid>https://osssg.netlify.app/news/posts/2022-07-21_content-creators-call/index.html</guid>
+  <pubDate>Thu, 21 Jul 2022 06:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Creating a website with open source software</title>
   <link>https://osssg.netlify.app/events/posts/2022-03-04_creating-websites/index.html</link>
