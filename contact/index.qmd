@@ -16,7 +16,7 @@ To receive email updates of our regular meetings and public events or to join ou
 
 ::: {.tool}
 <!-- TODO: Add link -->
-<a href="mailto:{{< var email.subscribe >}}" role="button" class="btn">
+<a href="mailto:{{< var email.contact >}}" role="button" class="btn">
 <i class="fas fa-envelope"></i>
 Email
 </a>
