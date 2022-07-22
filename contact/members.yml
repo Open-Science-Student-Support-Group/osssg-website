@@ -10,8 +10,36 @@
     I am interested in open science because all science should be transparent
     and accessible, and the philosophy of open science aligns with these values!
   image: avatars/brittany-lindsay.png
-  image_alt: A picture of Brittany hiking in the mountains with her dog
+  image_alt: Brittany hiking in the mountains with her pup, Mickey
   icons:
     - icon: fab fa-linkedin
       href: https://www.linkedin.com/in/brittanyllindsay/
       aria-label: Brittany's LinkedIn
+
+- name: Madeline Springle
+  role: Promotions
+  description: |
+    I’m a second-year Master’s student in Industrial-Organizational Psychology
+    currently studying how Asynchronous Virtual Interviews (AVIs) can negatively
+    impact employment opportunities for people of low socioeconomic status. I’m
+    originally from Ontario and have really enjoyed living in Calgary this past
+    year. Some of my best memories include hiking in the mountains, biking along
+    the Bow River, and rock climbing with friends. I became interested in open
+    science during my fourth year of undergrad when I took a statistics course
+    and learned how to publish a class project on OSF. Since then, I’ve
+    appreciated reading about open science practices and their many benefits and
+    potential areas of concern. I’m passionate about knowledge mobilization and
+    how we can relate psychological research to the workplace to ensure that
+    employees and organizations utilize up-to-date practices.
+  image: avatars/madeline-springle.png
+  image_alt: Brittany hiking in the mountains with her pup, Mickey
+  icons:
+    - icon: fas fa-envelope
+      href: mailto:madeline.springle@ucalgary.ca
+      aria-label: Madeline's email
+    - icon: fab fa-linkedin
+      href: https://www.linkedin.com/in/madeline-springle/
+      aria-label: Madeline's LinkedIn
+    - icon: fab fa-twitter
+      href: https://twitter.com/m_springle
+      aria-label: Madeline's Twitter
