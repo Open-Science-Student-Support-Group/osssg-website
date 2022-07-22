@@ -81,7 +81,7 @@ There are many ways to connect your local computer to GitHub. We recommend one o
 ::: {.panel-tabset}
 #### GitHub Desktop
 
-Install [GitHub Desktop]((https://desktop.github.com))
+Install [GitHub Desktop](https://desktop.github.com)
 
 ::: {.callout-note}
 We recommend this option if you've never used Git or GitHub before.
