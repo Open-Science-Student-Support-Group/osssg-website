@@ -43,6 +43,10 @@ The remainder of this document guides you through this process.
 
 ## Prerequisites
 
+### Operating system
+
+You can use any of the 3 major operating systems (MacOS, Linux, Windows) to work on our website.
+
 ### Set up Quarto
 
 For creating and rendering new posts you will need to: 
@@ -55,9 +59,12 @@ There are several editors you can use with Quarto. We recommend one of the follo
 ::: {.panel-tabset}
 #### RStudio (Recommended)
 
-Install [RStudio](https://www.rstudio.com/products/rstudio/download/#download)
+Install:
 
-Optionally: Read the *Hello, Quarto* [RStudio tutorial](https://quarto.org/docs/get-started/hello/rstudio.html). Note that if you want to run this tutorial yourself you will need to [install R](https://cloud.r-project.org/) and the R packages used in the tutorial. However, you **do not** need to install R to work on our website.
+- [R](https://cloud.r-project.org/) (this is just needed to open RStudio; you do not have to do any R programming to work on our website)
+- [RStudio](https://www.rstudio.com/products/rstudio/download/#download) version 2021.09.2 or newer
+
+Optionally: Read the *Hello, Quarto* [RStudio tutorial](https://quarto.org/docs/get-started/hello/rstudio.html). Note that if you want to run this tutorial yourself you will need to install the R packages used in the tutorial. However, you **do not** need to install these packages to work on our website.
 
 #### Visual Studio Code
 
@@ -168,7 +175,7 @@ Open VS Code, then open the project's folder inside VS Code, following the instr
 
 ### Previewing the site
 
-After opening the site you can open a live-reloading development server on your computer to preview the website while you work on it. Start the server by running the following in the terminal of RStudio or VS Code:
+After opening the site you can open a live-reloading development server on your computer to preview the website while you work on it. Start the server by running the following in the **Terminal** pane (not the console) of RStudio or VS Code:
 
 ```default
 quarto preview
@@ -182,7 +189,7 @@ There are five steps to the new post workflow. The sections below will take you 
 
 ### 1. Create a new GitHub branch
 
-First you'll want to create a new branch that you can work on your changes in.
+First you'll want to create a new branch that you can work on your changes in on your local computer.
 
 ::: {.panel-tabset}
 #### GitHub Desktop
@@ -219,12 +226,12 @@ The event post template is named `1999-01-24_event-post`. This name will be used
 
 Modifying the template for new posts:
 
-1. Copy the `1999-01-24_event-post` directory into the `/events/posts/` directory
+1. Copy the `1999-01-24_event-post` directory into the project's `/events/posts/` directory on your local computer
 2. Rename the `1999-01-24_event-post` directory with the appropriate post date and event name
 3. Open the `1999-01-24_event-post/index.md` file, edit and modify as needed
 
 ::: {.callout-warning}
-When renaming the post's directory, follow the formatting used in the template (i.e., `data_post-name`). This keeps the posts organized and easy to parse. Do not include spaces anywhere in the name, only underscores (which should separate the date and post name) and hyphens (which take the place of spaces) are allowed.
+When renaming the post's directory, follow the formatting used in the template (i.e., `date_post-name`). This keeps the posts organized and easy to parse. Do not include spaces anywhere in the name, only underscores (which should separate the date and post name) and hyphens (which take the place of spaces) are allowed.
 :::
 
 #### Generic post template
@@ -233,19 +240,19 @@ The generic post template is named `2000-11-18_generic-post`. This name will be 
 
 Modifying the template for new posts:
 
-1. Copy the `2000-11-18_generic-post` directory into the `/posts/` directory for the listing page you want to make a post in (e.g., `news` or `documents`)
+1. Copy the `2000-11-18_generic-post` directory into the project's `/posts/` directory for the listing page you want to make a post in (e.g., `news` or `documents`) on your local computer
 2. Rename the `1999-01-24_event-post` directory with the appropriate post date and post name
 3. Open the `2000-11-18_generic-post/index.md` file, edit and modify as needed
 
 ::: {.callout-warning}
-When renaming the post's directory, follow the formatting used in the template (i.e., `data_post-name`). This keeps the posts organized and easy to parse. Do not include spaces anywhere in the name, only underscores (which should separate the date and post name) and hyphens (which take the place of spaces) are allowed.
+When renaming the post's directory, follow the formatting used in the template (i.e., `date_post-name`). This keeps the posts organized and easy to parse. Do not include spaces anywhere in the name, only underscores (which should separate the date and post name) and hyphens (which take the place of spaces) are allowed.
 :::
 
 :::
 
 ### 3. Author your new post
 
-Once you have copied the template for the new post to the listing page you want you can start editing the input file for the post. This is the `index.md` file located inside the directory for the post. Do not rename this file.
+Once you have copied the template for the new post to the listing page you want you can start editing the input file for the post inside your editor (RStudio or VS Code). This is the `index.md` file located inside the directory for the post. Do not rename this file.
 
 Please see the [Markdown basics](https://quarto.org/docs/authoring/markdown-basics.html) page under the Authoring section in the Quarto [Guide](https://quarto.org/docs/guide/) for details on writing in Markdown, and the Websites section under the guide for website-specific concerns.
 
