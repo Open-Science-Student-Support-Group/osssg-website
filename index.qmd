@@ -29,6 +29,10 @@ See all the latest news and event information below, and explore the tabs above 
 
 <br>
 
+![](files/images/call-for-content-creators.png)
+
+<br>
+
 ## [News](news/index.qmd)
 
 :::{#news}
