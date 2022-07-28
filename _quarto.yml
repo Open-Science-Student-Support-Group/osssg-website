@@ -29,6 +29,8 @@ website:
       - text: "Contact"
         href: contact/index.qmd
     right:
+      - text: "<i class='fas fa-envelope ai-md' role='img' aria-label='OSSSG Email'></i>"
+        href: mailto:ucosssg@gmail.com
       - text: "<i class='ai ai-osf ai-md' role='img' aria-label='OSSSG OSF'></i>"
         href: https://osf.io/unpxa/
       - icon: github

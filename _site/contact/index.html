@@ -65,9 +65,9 @@ ul.task-list{list-style: none;}
     }
 
     const options = {
-      valueNames: ['listing-name','listing-description','listing-image','listing-image_alt','listing-icons',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-name','listing-role','listing-description','listing-image','listing-image_alt','listing-icons',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-name","listing-description","listing-image","listing-image_alt","listing-icons"],
+      searchColumns: ["listing-name","listing-role","listing-description","listing-image","listing-image_alt","listing-icons"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -131,6 +131,9 @@ ul.task-list{list-style: none;}
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
+    <a class="nav-link" href="mailto:ucosssg@gmail.com"><i class="fas fa-envelope ai-md" role="img" aria-label="OSSSG Email"></i></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://osf.io/unpxa/"><i class="ai ai-osf ai-md" role="img" aria-label="OSSSG OSF"></i></a>
   </li>  
   <li class="nav-item compact">
@@ -168,8 +171,8 @@ ul.task-list{list-style: none;}
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#mailing-list" id="toc-mailing-list" class="nav-link active" data-scroll-target="#mailing-list">Mailing List</a></li>
-  <li><a href="#members" id="toc-members" class="nav-link" data-scroll-target="#members">Members</a></li>
+  <li><a href="#mailing-list-and-slack" id="toc-mailing-list-and-slack" class="nav-link active" data-scroll-target="#mailing-list-and-slack">Mailing List and Slack</a></li>
+  <li><a href="#organizing-team" id="toc-organizing-team" class="nav-link" data-scroll-target="#organizing-team">Organizing Team</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/Open-Science-Student-Support-Group/osssg-website/edit/main/contact/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/Open-Science-Student-Support-Group/osssg-website/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -179,16 +182,16 @@ ul.task-list{list-style: none;}
 
 
 
-<section id="mailing-list" class="level2">
-<h2 class="anchored" data-anchor-id="mailing-list">Mailing List</h2>
-<p>To receive email updates of our regular meetings and public events, please sign up for our mailing list here.</p>
+<section id="mailing-list-and-slack" class="level2">
+<h2 class="anchored" data-anchor-id="mailing-list-and-slack">Mailing List and Slack</h2>
+<p>To receive email updates of our regular meetings and public events or to join our Slack workspace, please email us using the button below and we will set you up.</p>
 <div class="tool">
 <!-- TODO: Add link -->
-<p><a href="mailto:ucosssg@gmail.com" role="button" class="btn"> <i class="fas fa-envelope"></i> Subscribe </a></p>
+<p><a href="mailto:ucosssg@gmail.com" role="button" class="btn"> <i class="fas fa-envelope"></i> Email </a></p>
 </div>
 </section>
-<section id="members" class="level2">
-<h2 class="anchored" data-anchor-id="members">Members</h2>
+<section id="organizing-team" class="level2">
+<h2 class="anchored" data-anchor-id="organizing-team">Organizing Team</h2>
 <div id="listing-members" class="quarto-listing quarto-listing-container-custom">
 <div class="listing-actions-group">
     <div class="input-group input-group-sm quarto-listing-filter">
@@ -196,14 +199,76 @@ ul.task-list{list-style: none;}
       <input type="text" class="search form-control" placeholder="Filter">
     </div>
 </div>
+
 <div class="list member-listing">
   <div class="grid member-post mt-5" style="row-gap: 0;" data-index="0">
+    <div class="g-col-12 g-col-md-4 mb-3 mb-md-5">
+      <div class="d-flex mx-auto justify-content-center">
+        <img src="avatars/chelsie-hart.png" class="rounded w-75" alt="A nice headshot of Chelsie">
+      </div>
+      <div class="text-center">
+        <h3 class="no-anchor listing-name">Chelsie Miko Hart</h3>
+        <h6 class="no-anchor listing-name">Contributor</h6>
+      </div>
+      <div class="grid d-flex mx-auto justify-content-center mt-3">
+          <a href="https://www.linkedin.com/in/chelsie-m-hart/">
+            <i class="fab fa-linkedin fa-lg" role="img" aria-label="icon.aria-label"></i>
+          </a>
+          <a href="https://twitter.com/ChelsieMHart">
+            <i class="fab fa-twitter fa-lg" role="img" aria-label="icon.aria-label"></i>
+          </a>
+      </div>
+    </div>
+    <div class="g-col-12 g-col-md-8 mb-4">
+      <div class=""><p>I'm Chelsie (she/them), a PhD candidate in experimental psychology supervised
+by Dr. Julia Kam and Dr. Brandy Callahan, studying mind wandering and
+executive functioning in individuals with and without diagnosis of
+Attention-Deficit/Hyperactivity Disorder. My overall research interests are on
+the impact (or lack thereof) on sex, gender, and sexual identity on mental
+health and cognition; and anything to do with videogames. I care about open
+science because I believe scientists need to be accountable for our research
+and findings, and that research should be accessible to everyone. It takes a
+long time for findings to get applied in the real world and academics need to
+do more to mitigate that, while also dealing with misinformation and
+misinterpretation of their work!
+</p></div>
+    </div>
+  </div>
+  <div class="grid member-post mt-5" style="row-gap: 0;" data-index="1">
+    <div class="g-col-12 g-col-md-4 mb-3 mb-md-5">
+      <div class="d-flex mx-auto justify-content-center">
+        <img src="avatars/brittany-lindsay.png" class="rounded w-75" alt="Brittany hiking in the mountains with her pup, Mickey">
+      </div>
+      <div class="text-center">
+        <h3 class="no-anchor listing-name">Brittany Lindsay</h3>
+        <h6 class="no-anchor listing-name">Promotions</h6>
+      </div>
+      <div class="grid d-flex mx-auto justify-content-center mt-3">
+          <a href="https://www.linkedin.com/in/brittanyllindsay/">
+            <i class="fab fa-linkedin fa-lg" role="img" aria-label="icon.aria-label"></i>
+          </a>
+      </div>
+    </div>
+    <div class="g-col-12 g-col-md-8 mb-4">
+      <div class=""><p>Hi everyone! My name is Brittany (she/her) and I am a PhD candidate in
+Psychology working with Dr. Andrew Szeto. My research interests involve
+mental health promotion, mental illness and suicide stigma reduction, and
+post-secondary student well-being. My other interests include hiking,
+cooking, listening to podcasts, and hanging out with my pup Mickey!
+<br><br>
+I am interested in open science because all science should be transparent
+and accessible, and the philosophy of open science aligns with these values!
+</p></div>
+    </div>
+  </div>
+  <div class="grid member-post mt-5" style="row-gap: 0;" data-index="2">
     <div class="g-col-12 g-col-md-4 mb-3 mb-md-5">
       <div class="d-flex mx-auto justify-content-center">
         <img src="avatars/michael-mccarthy.png" class="rounded w-75" alt="A picture of Michael hiking in the Rocky Mountains">
       </div>
       <div class="text-center">
         <h3 class="no-anchor listing-name">Michael McCarthy</h3>
+        <h6 class="no-anchor listing-name">Contributor</h6>
       </div>
       <div class="grid d-flex mx-auto justify-content-center mt-3">
           <a href="https://michaelmccarthy.tidytales.ca">
@@ -221,21 +286,60 @@ ul.task-list{list-style: none;}
       </div>
     </div>
     <div class="g-col-12 g-col-md-8 mb-4">
-      <div class=""><p>I am an award winning data scientist and R programmer passionate about solving problems with data.
-My background is in psychology research, where I’ve studied topics ranging from attitude formation,
-to decision-making, to individual differences in brain function. Studying how people think and act
-has given me a deep appreciation for the human side of data science. Much of our data is about
-people. All of our data is communicated to people. Understanding these relationships has been key
-to successfully navigating my role as a data scientist.
+      <div class=""><p>I am a data scientist and R programmer passionate about solving problems
+with data. My background is in psychology research, where I’ve studied
+topics ranging from attitude formation, to decision-making, to individual
+differences in brain function. Studying how people think and act has given
+me a deep appreciation for the human side of data science. Much of our data
+is about people. All of our data is communicated to people. Understanding
+these relationships has been key to successfully navigating my role as a
+data scientist, and has taught me the importance of a transparent and
+accessible approach to scientific research.
 <br><br>
-If you have a problem that you want to use data science to answer, I would love to help you. I offer
-several <a href="https://michaelmccarthy.tidytales.ca/consulting/">consulting services</a> to help you accomplish your goals at any point in your project lifecycle,
-including long and short term consulting work, private training, and drop-in consulting. I value
-building new connections and would love to discuss opportunities to work with you. Let’s get to know
-each other.
-<br><br>
-When I’m not working you can find me writing music in my studio, riding my bike on the local trails,
-or spending time with my friends and family.
+If you have a problem that you want to use data science to answer, I would
+love to help you. I offer several
+<a href="https://michaelmccarthy.tidytales.ca/consulting/">consulting services</a>
+to help you accomplish your goals at any point in your project lifecycle,
+including long and short term consulting work, private training, and drop-in
+consulting. I value building new connections and would love to discuss
+opportunities to work with you. Let’s get to know each other!
+</p></div>
+    </div>
+  </div>
+  <div class="grid member-post mt-5" style="row-gap: 0;" data-index="3">
+    <div class="g-col-12 g-col-md-4 mb-3 mb-md-5">
+      <div class="d-flex mx-auto justify-content-center">
+        <img src="avatars/madeline-springle.png" class="rounded w-75" alt="A professional headshot of Madeline">
+      </div>
+      <div class="text-center">
+        <h3 class="no-anchor listing-name">Madeline Springle</h3>
+        <h6 class="no-anchor listing-name">Promotions</h6>
+      </div>
+      <div class="grid d-flex mx-auto justify-content-center mt-3">
+          <a href="mailto:madeline.springle@ucalgary.ca">
+            <i class="fas fa-envelope fa-lg" role="img" aria-label="icon.aria-label"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/madeline-springle/">
+            <i class="fab fa-linkedin fa-lg" role="img" aria-label="icon.aria-label"></i>
+          </a>
+          <a href="https://twitter.com/m_springle">
+            <i class="fab fa-twitter fa-lg" role="img" aria-label="icon.aria-label"></i>
+          </a>
+      </div>
+    </div>
+    <div class="g-col-12 g-col-md-8 mb-4">
+      <div class=""><p>I’m a second-year Master’s student in Industrial-Organizational Psychology
+currently studying how Asynchronous Virtual Interviews (AVIs) can negatively
+impact employment opportunities for people of low socioeconomic status. I’m
+originally from Ontario and have really enjoyed living in Calgary this past
+year. Some of my best memories include hiking in the mountains, biking along
+the Bow River, and rock climbing with friends. I became interested in open
+science during my fourth year of undergrad when I took a statistics course
+and learned how to publish a class project on OSF. Since then, I’ve
+appreciated reading about open science practices and their many benefits and
+potential areas of concern. I’m passionate about knowledge mobilization and
+how we can relate psychological research to the workplace to ensure that
+employees and organizations utilize up-to-date practices.
 </p></div>
     </div>
   </div>

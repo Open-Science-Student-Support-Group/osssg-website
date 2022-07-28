@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Michael McCarthy">
-<meta name="dcterms.date" content="2022-07-20">
+<meta name="dcterms.date" content="2022-07-27">
 
 <title>OSSSG - New Post Workflow</title>
 <style>
@@ -159,6 +159,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
+    <a class="nav-link" href="mailto:ucosssg@gmail.com"><i class="fas fa-envelope ai-md" role="img" aria-label="OSSSG Email"></i></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://osf.io/unpxa/"><i class="ai ai-osf ai-md" role="img" aria-label="OSSSG OSF"></i></a>
   </li>  
   <li class="nav-item compact">
@@ -185,6 +188,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#how-the-website-works" id="toc-how-the-website-works" class="nav-link" data-scroll-target="#how-the-website-works">How the website works</a></li>
   <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites">Prerequisites</a>
   <ul class="collapse">
+  <li><a href="#operating-system" id="toc-operating-system" class="nav-link" data-scroll-target="#operating-system">Operating system</a></li>
   <li><a href="#set-up-quarto" id="toc-set-up-quarto" class="nav-link" data-scroll-target="#set-up-quarto">Set up Quarto</a></li>
   <li><a href="#set-up-github" id="toc-set-up-github" class="nav-link" data-scroll-target="#set-up-github">Set up GitHub</a></li>
   <li><a href="#clone-the-website-repository" id="toc-clone-the-website-repository" class="nav-link" data-scroll-target="#clone-the-website-repository">Clone the website repository</a></li>
@@ -234,7 +238,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 20, 2022</p>
+      <p class="date">July 27, 2022</p>
     </div>
   </div>
     
@@ -286,6 +290,10 @@ Note
 </section>
 <section id="prerequisites" class="level2">
 <h2 class="anchored" data-anchor-id="prerequisites">Prerequisites</h2>
+<section id="operating-system" class="level3">
+<h3 class="anchored" data-anchor-id="operating-system">Operating system</h3>
+<p>You can use any of the 3 major operating systems (MacOS, Linux, Windows) to work on our website.</p>
+</section>
 <section id="set-up-quarto" class="level3">
 <h3 class="anchored" data-anchor-id="set-up-quarto">Set up Quarto</h3>
 <p>For creating and rendering new posts you will need to:</p>
@@ -298,8 +306,12 @@ Note
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">RStudio (Recommended)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Visual Studio Code</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p>Install <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio</a></p>
-<p>Optionally: Read the <em>Hello, Quarto</em> <a href="https://quarto.org/docs/get-started/hello/rstudio.html">RStudio tutorial</a>. Note that if you want to run this tutorial yourself you will need to <a href="https://cloud.r-project.org/">install R</a> and the R packages used in the tutorial. However, you <strong>do not</strong> need to install R to work on our website.</p>
+<p>Install:</p>
+<ul>
+<li><a href="https://cloud.r-project.org/">R</a> (this is just needed to open RStudio; you do not have to do any R programming to work on our website)</li>
+<li><a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio</a> version 2021.09.2 or newer</li>
+</ul>
+<p>Optionally: Read the <em>Hello, Quarto</em> <a href="https://quarto.org/docs/get-started/hello/rstudio.html">RStudio tutorial</a>. Note that if you want to run this tutorial yourself you will need to install the R packages used in the tutorial. However, you <strong>do not</strong> need to install these packages to work on our website.</p>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <p>Install:</p>
@@ -429,7 +441,7 @@ Note
 </section>
 <section id="previewing-the-site" class="level3">
 <h3 class="anchored" data-anchor-id="previewing-the-site">Previewing the site</h3>
-<p>After opening the site you can open a live-reloading development server on your computer to preview the website while you work on it. Start the server by running the following in the terminal of RStudio or VS Code:</p>
+<p>After opening the site you can open a live-reloading development server on your computer to preview the website while you work on it. Start the server by running the following in the <strong>Terminal</strong> pane (not the console) of RStudio or VS Code:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>quarto preview</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>The development server will automatically re-render input files whenever they change. For more details see the Quarto <a href="https://quarto.org/docs/websites/index.html#workflow">website workflow documentation</a>, and the sections on previewing with <a href="https://quarto.org/docs/tools/rstudio.html#render-and-preview">RStudio</a> and <a href="https://quarto.org/docs/tools/vscode.html#render-and-preview">VS Code</a>.</p>
 </section>
@@ -439,7 +451,7 @@ Note
 <p>There are five steps to the new post workflow. The sections below will take you through each step.</p>
 <section id="create-a-new-github-branch" class="level3">
 <h3 class="anchored" data-anchor-id="create-a-new-github-branch">1. Create a new GitHub branch</h3>
-<p>First you’ll want to create a new branch that you can work on your changes in.</p>
+<p>First you’ll want to create a new branch that you can work on your changes in on your local computer.</p>
 <div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true">GitHub Desktop</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false">RStudio (built-in Git)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-3" role="tab" aria-controls="tabset-5-3" aria-selected="false">RStudio (usethis)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-4" role="tab" aria-controls="tabset-5-4" aria-selected="false">VS Code (built-in Git)</a></li></ul>
 <div class="tab-content">
@@ -474,7 +486,7 @@ Note
 <p>The event post template is named <code>1999-01-24_event-post</code>. This name will be used for the post in its URL on the site.</p>
 <p>Modifying the template for new posts:</p>
 <ol type="1">
-<li>Copy the <code>1999-01-24_event-post</code> directory into the <code>/events/posts/</code> directory</li>
+<li>Copy the <code>1999-01-24_event-post</code> directory into the project’s <code>/events/posts/</code> directory on your local computer</li>
 <li>Rename the <code>1999-01-24_event-post</code> directory with the appropriate post date and event name</li>
 <li>Open the <code>1999-01-24_event-post/index.md</code> file, edit and modify as needed</li>
 </ol>
@@ -488,7 +500,7 @@ Warning
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>When renaming the post’s directory, follow the formatting used in the template (i.e., <code>data_post-name</code>). This keeps the posts organized and easy to parse. Do not include spaces anywhere in the name, only underscores (which should separate the date and post name) and hyphens (which take the place of spaces) are allowed.</p>
+<p>When renaming the post’s directory, follow the formatting used in the template (i.e., <code>date_post-name</code>). This keeps the posts organized and easy to parse. Do not include spaces anywhere in the name, only underscores (which should separate the date and post name) and hyphens (which take the place of spaces) are allowed.</p>
 </div>
 </div>
 </div>
@@ -496,7 +508,7 @@ Warning
 <p>The generic post template is named <code>2000-11-18_generic-post</code>. This name will be used for the post in its URL on the site.</p>
 <p>Modifying the template for new posts:</p>
 <ol type="1">
-<li>Copy the <code>2000-11-18_generic-post</code> directory into the <code>/posts/</code> directory for the listing page you want to make a post in (e.g., <code>news</code> or <code>documents</code>)</li>
+<li>Copy the <code>2000-11-18_generic-post</code> directory into the project’s <code>/posts/</code> directory for the listing page you want to make a post in (e.g., <code>news</code> or <code>documents</code>) on your local computer</li>
 <li>Rename the <code>1999-01-24_event-post</code> directory with the appropriate post date and post name</li>
 <li>Open the <code>2000-11-18_generic-post/index.md</code> file, edit and modify as needed</li>
 </ol>
@@ -510,7 +522,7 @@ Warning
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>When renaming the post’s directory, follow the formatting used in the template (i.e., <code>data_post-name</code>). This keeps the posts organized and easy to parse. Do not include spaces anywhere in the name, only underscores (which should separate the date and post name) and hyphens (which take the place of spaces) are allowed.</p>
+<p>When renaming the post’s directory, follow the formatting used in the template (i.e., <code>date_post-name</code>). This keeps the posts organized and easy to parse. Do not include spaces anywhere in the name, only underscores (which should separate the date and post name) and hyphens (which take the place of spaces) are allowed.</p>
 </div>
 </div>
 </div>
@@ -519,7 +531,7 @@ Warning
 </section>
 <section id="author-your-new-post" class="level3">
 <h3 class="anchored" data-anchor-id="author-your-new-post">3. Author your new post</h3>
-<p>Once you have copied the template for the new post to the listing page you want you can start editing the input file for the post. This is the <code>index.md</code> file located inside the directory for the post. Do not rename this file.</p>
+<p>Once you have copied the template for the new post to the listing page you want you can start editing the input file for the post inside your editor (RStudio or VS Code). This is the <code>index.md</code> file located inside the directory for the post. Do not rename this file.</p>
 <p>Please see the <a href="https://quarto.org/docs/authoring/markdown-basics.html">Markdown basics</a> page under the Authoring section in the Quarto <a href="https://quarto.org/docs/guide/">Guide</a> for details on writing in Markdown, and the Websites section under the guide for website-specific concerns.</p>
 <p>If you want to add icons or emojis to your post, see:</p>
 <ul>

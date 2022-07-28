@@ -1,20 +1,65 @@
-- name: Michael McCarthy
+- name: Chelsie Miko Hart
+  role: Contributor
   description: |
-    I am an award winning data scientist and R programmer passionate about solving problems with data.
-    My background is in psychology research, where I’ve studied topics ranging from attitude formation,
-    to decision-making, to individual differences in brain function. Studying how people think and act
-    has given me a deep appreciation for the human side of data science. Much of our data is about
-    people. All of our data is communicated to people. Understanding these relationships has been key
-    to successfully navigating my role as a data scientist.
+    I'm Chelsie (she/them), a PhD candidate in experimental psychology supervised
+    by Dr. Julia Kam and Dr. Brandy Callahan, studying mind wandering and
+    executive functioning in individuals with and without diagnosis of
+    Attention-Deficit/Hyperactivity Disorder. My overall research interests are on
+    the impact (or lack thereof) on sex, gender, and sexual identity on mental
+    health and cognition; and anything to do with videogames. I care about open
+    science because I believe scientists need to be accountable for our research
+    and findings, and that research should be accessible to everyone. It takes a
+    long time for findings to get applied in the real world and academics need to
+    do more to mitigate that, while also dealing with misinformation and
+    misinterpretation of their work!
+  image: avatars/chelsie-hart.png
+  image_alt: A nice headshot of Chelsie
+  icons:
+    - icon: fab fa-linkedin
+      href: https://www.linkedin.com/in/chelsie-m-hart/
+      aria-label: Chelsie's LinkedIn
+    - icon: fab fa-twitter
+      href: https://twitter.com/ChelsieMHart
+      aria-label: Chelsie's Twitter
+
+- name: Brittany Lindsay
+  role: Promotions
+  description: |
+    Hi everyone! My name is Brittany (she/her) and I am a PhD candidate in
+    Psychology working with Dr. Andrew Szeto. My research interests involve
+    mental health promotion, mental illness and suicide stigma reduction, and
+    post-secondary student well-being. My other interests include hiking,
+    cooking, listening to podcasts, and hanging out with my pup Mickey!
     <br><br>
-    If you have a problem that you want to use data science to answer, I would love to help you. I offer
-    several <a href="https://michaelmccarthy.tidytales.ca/consulting/">consulting services</a> to help you accomplish your goals at any point in your project lifecycle,
-    including long and short term consulting work, private training, and drop-in consulting. I value
-    building new connections and would love to discuss opportunities to work with you. Let’s get to know
-    each other.
+    I am interested in open science because all science should be transparent
+    and accessible, and the philosophy of open science aligns with these values!
+  image: avatars/brittany-lindsay.png
+  image_alt: Brittany hiking in the mountains with her pup, Mickey
+  icons:
+    - icon: fab fa-linkedin
+      href: https://www.linkedin.com/in/brittanyllindsay/
+      aria-label: Brittany's LinkedIn
+
+- name: Michael McCarthy
+  role: Contributor
+  description: |
+    I am a data scientist and R programmer passionate about solving problems
+    with data. My background is in psychology research, where I’ve studied
+    topics ranging from attitude formation, to decision-making, to individual
+    differences in brain function. Studying how people think and act has given
+    me a deep appreciation for the human side of data science. Much of our data
+    is about people. All of our data is communicated to people. Understanding
+    these relationships has been key to successfully navigating my role as a
+    data scientist, and has taught me the importance of a transparent and
+    accessible approach to scientific research.
     <br><br>
-    When I’m not working you can find me writing music in my studio, riding my bike on the local trails,
-    or spending time with my friends and family.
+    If you have a problem that you want to use data science to answer, I would
+    love to help you. I offer several
+    <a href="https://michaelmccarthy.tidytales.ca/consulting/">consulting services</a>
+    to help you accomplish your goals at any point in your project lifecycle,
+    including long and short term consulting work, private training, and drop-in
+    consulting. I value building new connections and would love to discuss
+    opportunities to work with you. Let’s get to know each other!
   image: avatars/michael-mccarthy.png
   image_alt: A picture of Michael hiking in the Rocky Mountains
   icons:
@@ -30,3 +75,31 @@
     - icon: fab fa-linkedin
       href: https://www.linkedin.com/in/mccarthymg/
       aria-label: Michael's LinkedIn
+
+- name: Madeline Springle
+  role: Promotions
+  description: |
+    I’m a second-year Master’s student in Industrial-Organizational Psychology
+    currently studying how Asynchronous Virtual Interviews (AVIs) can negatively
+    impact employment opportunities for people of low socioeconomic status. I’m
+    originally from Ontario and have really enjoyed living in Calgary this past
+    year. Some of my best memories include hiking in the mountains, biking along
+    the Bow River, and rock climbing with friends. I became interested in open
+    science during my fourth year of undergrad when I took a statistics course
+    and learned how to publish a class project on OSF. Since then, I’ve
+    appreciated reading about open science practices and their many benefits and
+    potential areas of concern. I’m passionate about knowledge mobilization and
+    how we can relate psychological research to the workplace to ensure that
+    employees and organizations utilize up-to-date practices.
+  image: avatars/madeline-springle.png
+  image_alt: A professional headshot of Madeline
+  icons:
+    - icon: fas fa-envelope
+      href: mailto:madeline.springle@ucalgary.ca
+      aria-label: Madeline's email
+    - icon: fab fa-linkedin
+      href: https://www.linkedin.com/in/madeline-springle/
+      aria-label: Madeline's LinkedIn
+    - icon: fab fa-twitter
+      href: https://twitter.com/m_springle
+      aria-label: Madeline's Twitter

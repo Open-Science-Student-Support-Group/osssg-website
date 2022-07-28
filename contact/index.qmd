@@ -10,19 +10,19 @@ listing:
     filter-ui: true
 ---
 
-## Mailing List
+## Mailing List and Slack
 
-To receive email updates of our regular meetings and public events, please sign up for our mailing list here.
+To receive email updates of our regular meetings and public events or to join our Slack workspace, please email us using the button below and we will set you up.
 
 ::: {.tool}
 <!-- TODO: Add link -->
-<a href="mailto:{{< var email.subscribe >}}" role="button" class="btn">
+<a href="mailto:{{< var email.contact >}}" role="button" class="btn">
 <i class="fas fa-envelope"></i>
-Subscribe
+Email
 </a>
 :::
 
-## Members
+## Organizing Team
 
 :::{#members}
 :::
