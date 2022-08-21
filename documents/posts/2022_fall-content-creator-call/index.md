@@ -1,7 +1,7 @@
 ---
-title: Call for Open Science "Content Creators" Fall 2022
+title: Call for Open Science Content Creators Fall 2022
 author: Emiko Muraki
-date: 2022/02/17
+date: 2022/08/21
 ---
 
 The Open Science Student Support Group (OSSSG) is looking for students in the Department of Psychology at the University of Calgary to be “content creators” for Fall 2022. 
