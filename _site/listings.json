@@ -1,12 +1,33 @@
 [
   {
-    "listing": "/contact/index.html",
-    "items": []
+    "listing": "/events/index.html",
+    "items": [
+      "/events/posts/2023-01-19_what-is-open-science/index.html",
+      "/events/posts/2022-11-29_letting-go-of-perfect/index.html",
+      "/events/posts/2022-03-04_creating-websites/index.html",
+      "/events/posts/2021-11-19_open-science-in-industry/index.html",
+      "/events/posts/2021-10-22_perfectionism/index.html",
+      "/events/posts/2021-10-06_questionable-research-practices/index.html",
+      "/events/posts/2021-09-16_welcome-back-open-science/index.html",
+      "/events/posts/2021-04-09_hot-topics-open-science/index.html",
+      "/events/posts/2021-03-26_knowledge-mobilization/index.html",
+      "/events/posts/2021-03-12_you-and-open-science/index.html",
+      "/events/posts/2021-02-26_edi-open-science/index.html",
+      "/events/posts/2021-02-12_reproducible-manuscripts/index.html",
+      "/events/posts/2021-01-29_reproducible-science/index.html",
+      "/events/posts/2020-12-04_troubleshooting-open-science/index.html",
+      "/events/posts/2020-11-20_preregistration/index.html",
+      "/events/posts/2020-11-06_open-data/index.html",
+      "/events/posts/2020-10-23_project-workflow/index.html",
+      "/events/posts/2020-10-09_intro_to_open_science/index.html"
+    ]
   },
   {
     "listing": "/index.html",
     "items": [
       "/news/posts/2022-04-27_quality-money/index.html",
+      "/events/posts/2023-01-19_what-is-open-science/index.html",
+      "/events/posts/2022-11-29_letting-go-of-perfect/index.html",
       "/events/posts/2022-03-04_creating-websites/index.html",
       "/events/posts/2021-11-19_open-science-in-industry/index.html",
       "/events/posts/2021-10-22_perfectionism/index.html",
@@ -26,45 +47,7 @@
     ]
   },
   {
-    "listing": "/news/index.html",
-    "items": [
-      "/news/posts/2022-04-27_quality-money/index.html"
-    ]
-  },
-  {
-    "listing": "/documents/index.html",
-    "items": [
-      "/documents/posts/slack-getting-started/index.html",
-      "/documents/posts/community-guidelines/index.html",
-      "/documents/posts/new-post-workflow/index.html",
-      "/documents/posts/facilitators-guide/index.html",
-      "/documents/posts/organizational-structure/index.html",
-      "/documents/posts/website-basics/index.html",
-      "/documents/posts/event-organization/index.html",
-      "/documents/posts/templates/index.html",
-      "/documents/posts/conflict-resolution-guidelines/index.html",
-      "/documents/posts/2022_fall-content-creator-call/index.html"
-    ]
-  },
-  {
-    "listing": "/events/index.html",
-    "items": [
-      "/events/posts/2022-03-04_creating-websites/index.html",
-      "/events/posts/2021-11-19_open-science-in-industry/index.html",
-      "/events/posts/2021-10-22_perfectionism/index.html",
-      "/events/posts/2021-10-06_questionable-research-practices/index.html",
-      "/events/posts/2021-09-16_welcome-back-open-science/index.html",
-      "/events/posts/2021-04-09_hot-topics-open-science/index.html",
-      "/events/posts/2021-03-26_knowledge-mobilization/index.html",
-      "/events/posts/2021-03-12_you-and-open-science/index.html",
-      "/events/posts/2021-02-26_edi-open-science/index.html",
-      "/events/posts/2021-02-12_reproducible-manuscripts/index.html",
-      "/events/posts/2021-01-29_reproducible-science/index.html",
-      "/events/posts/2020-12-04_troubleshooting-open-science/index.html",
-      "/events/posts/2020-11-20_preregistration/index.html",
-      "/events/posts/2020-11-06_open-data/index.html",
-      "/events/posts/2020-10-23_project-workflow/index.html",
-      "/events/posts/2020-10-09_intro_to_open_science/index.html"
-    ]
+    "listing": "/contact/index.html",
+    "items": []
   }
 ]

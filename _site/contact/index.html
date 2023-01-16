@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.35">
+<meta name="generator" content="quarto-1.1.251">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,10 +11,15 @@
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
 </style>
 
 
@@ -105,9 +110,11 @@ ul.task-list{list-style: none;}
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <a class="navbar-brand" href="../index.html">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">OSSSG</span>
-  </a>
+    </a>
+  </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
@@ -167,7 +174,7 @@ ul.task-list{list-style: none;}
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
@@ -201,7 +208,7 @@ ul.task-list{list-style: none;}
 </div>
 
 <div class="list member-listing">
-  <div class="grid member-post mt-6" style="row-gap: 0;" data-index="0">
+  <div class="grid member-post mt-5" style="row-gap: 0;" data-index="0">
     <div class="g-col-12 g-col-md-4 mb-3 mb-md-5">
       <div class="d-flex mx-auto justify-content-center">
         <img src="avatars/chelsie-hart.png" class="rounded w-75" alt="A nice headshot of Chelsie">
@@ -219,7 +226,7 @@ ul.task-list{list-style: none;}
           </a>
       </div>
     </div>
-    <div class="g-col-12 g-col-md-8 mb-5">
+    <div class="g-col-12 g-col-md-8 mb-4">
       <div class=""><p>I'm Chelsie (she/them), a PhD candidate in experimental psychology supervised
 by Dr. Julia Kam and Dr. Brandy Callahan, studying mind wandering and
 executive functioning in individuals with and without diagnosis of
@@ -234,7 +241,7 @@ misinterpretation of their work!
 </p></div>
     </div>
   </div>
-  <div class="grid member-post mt-6" style="row-gap: 0;" data-index="1">
+  <div class="grid member-post mt-5" style="row-gap: 0;" data-index="1">
     <div class="g-col-12 g-col-md-4 mb-3 mb-md-5">
       <div class="d-flex mx-auto justify-content-center">
         <img src="avatars/brittany-lindsay.png" class="rounded w-75" alt="Brittany hiking in the mountains with her pup, Mickey">
@@ -261,7 +268,7 @@ and accessible, and the philosophy of open science aligns with these values!
 </p></div>
     </div>
   </div>
-  <div class="grid member-post mt-6" style="row-gap: 0;" data-index="2">
+  <div class="grid member-post mt-5" style="row-gap: 0;" data-index="2">
     <div class="g-col-12 g-col-md-4 mb-3 mb-md-5">
       <div class="d-flex mx-auto justify-content-center">
         <img src="avatars/michael-mccarthy.png" class="rounded w-75" alt="A picture of Michael hiking in the Rocky Mountains">
@@ -306,14 +313,14 @@ opportunities to work with you. Let’s get to know each other!
 </p></div>
     </div>
   </div>
-  <div class="grid member-post mt-6" style="row-gap: 0;" data-index="3">
+  <div class="grid member-post mt-5" style="row-gap: 0;" data-index="3">
     <div class="g-col-12 g-col-md-4 mb-3 mb-md-5">
       <div class="d-flex mx-auto justify-content-center">
-        <img src="avatars/kaitlyn-guenther.jpg" class="rounded w-75" alt="A nice headshot of Kaitlyn">
+        <img src="avatars/kaitlyn-guenther.jpg" class="rounded w-75" alt="A professional headshot of Kaitlyn">
       </div>
       <div class="text-center">
         <h3 class="no-anchor listing-name">Kaitlyn Guenther</h3>
-        <h6 class="no-anchor listing-name">Contributor</h6>
+        <h6 class="no-anchor listing-name">Promotions</h6>
       </div>
       <div class="grid d-flex mx-auto justify-content-center mt-3">
           <a href="mailto:kaitlyn.guenther@ucalgary.ca">
@@ -324,52 +331,17 @@ opportunities to work with you. Let’s get to know each other!
           </a>
       </div>
     </div>
-      <div class="g-col-12 g-col-md-8 mb-4">
-      <div class=""><p>I’m Kaitlyn (she/they) and I am in the final year of my Psychology Undergraduate degree.
- I’m most interested in Industrial-Organizational Psychology and my research interests include
- workplace mistreatment, job interviews, and impression management. I have been engaged with
- research throughout my degree and the most valuable courses I’ve taken have explored how to do
- research in ways that have the biggest impact on communities. The more I learn about and
- conduct research, the more I believe that practices like open science and knowledge mobilization
- are essential. Outside of academics, I really enjoy spending time with my family—we spend
- a lot of time going for walks and doing puzzles.
-</p></div>
-    </div>
-  </div>
-  <div class="grid member-post mt-6" style="row-gap: 0;" data-index="4">
-    <div class="g-col-12 g-col-md-4 mb-3 mb-md-5">
-      <div class="d-flex mx-auto justify-content-center">
-        <img src="avatars/madeline-springle.png" class="rounded w-75" alt="A professional headshot of Madeline">
-      </div>
-      <div class="text-center">
-        <h3 class="no-anchor listing-name">Madeline Springle</h3>
-        <h6 class="no-anchor listing-name">Promotions</h6>
-      </div>
-      <div class="grid d-flex mx-auto justify-content-center mt-3">
-          <a href="mailto:madeline.springle@ucalgary.ca">
-            <i class="fas fa-envelope fa-lg" role="img" aria-label="icon.aria-label"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/madeline-springle/">
-            <i class="fab fa-linkedin fa-lg" role="img" aria-label="icon.aria-label"></i>
-          </a>
-          <a href="https://twitter.com/m_springle">
-            <i class="fab fa-twitter fa-lg" role="img" aria-label="icon.aria-label"></i>
-          </a>
-      </div>
-    </div>
     <div class="g-col-12 g-col-md-8 mb-4">
-      <div class=""><p>I’m a second-year Master’s student in Industrial-Organizational Psychology
-currently studying how Asynchronous Virtual Interviews (AVIs) can negatively
-impact employment opportunities for people of low socioeconomic status. I’m
-originally from Ontario and have really enjoyed living in Calgary this past
-year. Some of my best memories include hiking in the mountains, biking along
-the Bow River, and rock climbing with friends. I became interested in open
-science during my fourth year of undergrad when I took a statistics course
-and learned how to publish a class project on OSF. Since then, I’ve
-appreciated reading about open science practices and their many benefits and
-potential areas of concern. I’m passionate about knowledge mobilization and
-how we can relate psychological research to the workplace to ensure that
-employees and organizations utilize up-to-date practices.
+      <div class=""><p>I’m Kaitlyn (she/they) and I am in the final year of my Psychology
+Undergraduate degree. I’m most interested in Industrial-Organizational
+Psychology and my research interests include workplace mistreatment,
+job interviews, and impression management. I have been engaged with research
+throughout my degree and the most valuable courses I’ve taken have explored
+how to do research in ways that have the biggest impact on communities.
+The more I learn about and conduct research, the more I believe that practices
+like open science and knowledge mobilization are essential. Outside of
+academics, I really enjoy spending time with my family — we spend a lot of
+time going for walks and doing puzzles.
 </p></div>
     </div>
   </div>
@@ -453,7 +425,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
@@ -498,7 +471,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">Proudly supported by <a href="https://gsa.ucalgary.ca/financial-support/quality-money-program/"><img src="../files/images/quality-money-logo.png" alt="Quality Money" style="height:1.65em"></a></div>   
+    <div class="nav-footer-left">Proudly supported by <a href="https://gsa.ucalgary.ca/financial-support/quality-money-program/"><img src="../files/images/quality-money-logo.png" style="height:1.65em" alt="Quality Money"></a></div>   
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">

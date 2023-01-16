@@ -9,8 +9,58 @@
 <link>https://osssg.netlify.app/index.html</link>
 <atom:link href="https://osssg.netlify.app/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.0.35</generator>
-<lastBuildDate>Sat, 19 Feb 2022 07:00:00 GMT</lastBuildDate>
+<generator>quarto-1.1.251</generator>
+<lastBuildDate>Sun, 15 Jan 2023 07:00:00 GMT</lastBuildDate>
+<item>
+  <title>What is Open Science</title>
+  <link>https://osssg.netlify.app/events/posts/2023-01-19_what-is-open-science/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<section id="event-details" class="level2">
+<h2 class="anchored" data-anchor-id="event-details">Event Details</h2>
+<p><strong>Speaker</strong>: Emko Muraki<br>
+<strong>Date and Time</strong>: January 19, 2023, from 5:00 PM to 6:30 PM<br>
+<strong>Location</strong>: University of Calgary ADMIN 247</p>
+<p>Chances are, you’ve heard the term open science come up in your classes or research work. But you may not be sure what open science is all about or how the concepts of open science can be applied to your research. In this session we will unpack what open science means and provide an overview of why it is important for advancing psychological science. This session will feature brief presentations on the basics of open science, with ample time for group discussions about different open science practices and how you can start implementing such practices into your research! Whether you are encountering open science for the first time, or have experience using open science practices, there will be something to gain for everyone!</p>
+<!--
+This is a registration button for the event. The URL for the button can be specified in the `registration_link` YAML parameter above. If you don't need a registration button you can remove the shortcode below.
+-->
+<div class="tool">
+<p><a href="" class="btn"> <i class="fas fa-user-plus"></i> Sign Up </a></p>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <category>talks</category>
+  <guid>https://osssg.netlify.app/events/posts/2023-01-19_what-is-open-science/index.html</guid>
+  <pubDate>Sun, 15 Jan 2023 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Letting go of Perfect</title>
+  <link>https://osssg.netlify.app/events/posts/2022-11-29_letting-go-of-perfect/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<section id="event-details" class="level2">
+<h2 class="anchored" data-anchor-id="event-details">Event Details</h2>
+<p><strong>Speaker</strong>: Brittany Lindsay<br>
+<strong>Date and Time</strong>: November 29, 2022, from 5:00 PM to 6:30 PM<br>
+<strong>Location</strong>: University of Calgary</p>
+<p>In academia, we are surrounded by assessments and critiques, and many high-achieving students often refer to themselves as perfectionists. Join Brittany Lindsay, PhD candidate and recovering perfectionist, as we explore the concept of perfectionism, its impact on our lives, and how we can welcome uncertainty and embrace vulnerability in academics, including open science practices. This session will include information about relevant concepts, facilitated discussions, and space for reflection.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>talks</category>
+  <guid>https://osssg.netlify.app/events/posts/2022-11-29_letting-go-of-perfect/index.html</guid>
+  <pubDate>Tue, 29 Nov 2022 07:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Creating a website with open source software</title>
   <link>https://osssg.netlify.app/events/posts/2022-03-04_creating-websites/index.html</link>

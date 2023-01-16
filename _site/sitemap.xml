@@ -1,135 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://osssg.netlify.app/contact/index.html</loc>
-    <lastmod>2022-08-21T17:22:08.941Z</lastmod>
-  </url>
-  <url>
-    <loc>https://osssg.netlify.app/about/index.html</loc>
-    <lastmod>2022-08-21T17:22:10.293Z</lastmod>
-  </url>
-  <url>
-    <loc>https://osssg.netlify.app/index.html</loc>
-    <lastmod>2022-08-21T17:22:11.567Z</lastmod>
-  </url>
-  <url>
-    <loc>https://osssg.netlify.app/news/posts/2022-04-27_quality-money/index.html</loc>
-    <lastmod>2022-08-21T17:22:12.123Z</lastmod>
-  </url>
-  <url>
-    <loc>https://osssg.netlify.app/news/index.html</loc>
-    <lastmod>2022-08-21T17:22:12.658Z</lastmod>
-  </url>
-  <url>
-    <loc>https://osssg.netlify.app/documents/posts/slack-getting-started/index.html</loc>
-    <lastmod>2022-08-21T17:22:13.333Z</lastmod>
-  </url>
-  <url>
-    <loc>https://osssg.netlify.app/documents/posts/2022_fall-content-creator-call/index.html</loc>
-    <lastmod>2022-08-21T17:22:13.955Z</lastmod>
-  </url>
-  <url>
-    <loc>https://osssg.netlify.app/documents/posts/community-guidelines/index.html</loc>
-    <lastmod>2022-08-21T17:22:14.744Z</lastmod>
-  </url>
-  <url>
-    <loc>https://osssg.netlify.app/documents/posts/new-post-workflow/index.html</loc>
-    <lastmod>2022-08-21T17:22:15.746Z</lastmod>
-  </url>
-  <url>
-    <loc>https://osssg.netlify.app/documents/posts/facilitators-guide/index.html</loc>
-    <lastmod>2022-08-21T17:22:16.345Z</lastmod>
-  </url>
-  <url>
-    <loc>https://osssg.netlify.app/documents/posts/organizational-structure/index.html</loc>
-    <lastmod>2022-08-21T17:22:17.074Z</lastmod>
-  </url>
-  <url>
-    <loc>https://osssg.netlify.app/documents/posts/website-basics/index.html</loc>
-    <lastmod>2022-08-21T17:22:17.708Z</lastmod>
-  </url>
-  <url>
-    <loc>https://osssg.netlify.app/documents/posts/event-organization/index.html</loc>
-    <lastmod>2022-08-21T17:22:18.427Z</lastmod>
-  </url>
-  <url>
-    <loc>https://osssg.netlify.app/documents/posts/templates/index.html</loc>
-    <lastmod>2022-08-21T17:22:18.966Z</lastmod>
-  </url>
-  <url>
-    <loc>https://osssg.netlify.app/documents/posts/conflict-resolution-guidelines/index.html</loc>
-    <lastmod>2022-08-21T17:22:19.680Z</lastmod>
-  </url>
-  <url>
-    <loc>https://osssg.netlify.app/documents/index.html</loc>
-    <lastmod>2022-08-21T17:22:20.374Z</lastmod>
-  </url>
-  <url>
-    <loc>https://osssg.netlify.app/events/posts/2021-09-16_welcome-back-open-science/index.html</loc>
-    <lastmod>2022-08-21T17:22:20.926Z</lastmod>
-  </url>
-  <url>
-    <loc>https://osssg.netlify.app/events/posts/2021-02-12_reproducible-manuscripts/index.html</loc>
-    <lastmod>2022-08-21T17:22:21.467Z</lastmod>
-  </url>
-  <url>
-    <loc>https://osssg.netlify.app/events/posts/2021-03-26_knowledge-mobilization/index.html</loc>
-    <lastmod>2022-08-21T17:22:21.966Z</lastmod>
-  </url>
-  <url>
-    <loc>https://osssg.netlify.app/events/posts/2021-02-26_edi-open-science/index.html</loc>
-    <lastmod>2022-08-21T17:22:22.528Z</lastmod>
-  </url>
-  <url>
-    <loc>https://osssg.netlify.app/events/posts/2021-10-06_questionable-research-practices/index.html</loc>
-    <lastmod>2022-08-21T17:22:23.144Z</lastmod>
-  </url>
-  <url>
-    <loc>https://osssg.netlify.app/events/posts/2020-11-06_open-data/index.html</loc>
-    <lastmod>2022-08-21T17:22:23.682Z</lastmod>
-  </url>
-  <url>
-    <loc>https://osssg.netlify.app/events/posts/2021-11-19_open-science-in-industry/index.html</loc>
-    <lastmod>2022-08-21T17:22:24.221Z</lastmod>
-  </url>
-  <url>
-    <loc>https://osssg.netlify.app/events/posts/2020-11-20_preregistration/index.html</loc>
-    <lastmod>2022-08-21T17:22:24.755Z</lastmod>
-  </url>
-  <url>
-    <loc>https://osssg.netlify.app/events/posts/2021-03-12_you-and-open-science/index.html</loc>
-    <lastmod>2022-08-21T17:22:25.333Z</lastmod>
-  </url>
-  <url>
-    <loc>https://osssg.netlify.app/events/posts/2020-12-04_troubleshooting-open-science/index.html</loc>
-    <lastmod>2022-08-21T17:22:25.871Z</lastmod>
-  </url>
-  <url>
     <loc>https://osssg.netlify.app/events/posts/2021-01-29_reproducible-science/index.html</loc>
-    <lastmod>2022-08-21T17:22:26.497Z</lastmod>
+    <lastmod>2023-01-16T03:18:48.509Z</lastmod>
   </url>
   <url>
     <loc>https://osssg.netlify.app/events/posts/2021-04-09_hot-topics-open-science/index.html</loc>
-    <lastmod>2022-08-21T17:22:27.063Z</lastmod>
+    <lastmod>2023-01-16T03:18:48.947Z</lastmod>
   </url>
   <url>
     <loc>https://osssg.netlify.app/events/posts/2021-10-22_perfectionism/index.html</loc>
-    <lastmod>2022-08-21T17:22:27.682Z</lastmod>
+    <lastmod>2023-01-16T03:18:49.378Z</lastmod>
   </url>
   <url>
     <loc>https://osssg.netlify.app/events/posts/2020-10-23_project-workflow/index.html</loc>
-    <lastmod>2022-08-21T17:22:28.301Z</lastmod>
+    <lastmod>2023-01-16T03:18:49.755Z</lastmod>
   </url>
   <url>
     <loc>https://osssg.netlify.app/events/posts/2020-10-09_intro_to_open_science/index.html</loc>
-    <lastmod>2022-08-21T17:22:28.904Z</lastmod>
+    <lastmod>2023-01-16T03:18:50.193Z</lastmod>
   </url>
   <url>
     <loc>https://osssg.netlify.app/events/posts/2022-03-04_creating-websites/index.html</loc>
-    <lastmod>2022-08-21T17:22:30.040Z</lastmod>
+    <lastmod>2023-01-16T03:18:50.891Z</lastmod>
+  </url>
+  <url>
+    <loc>https://osssg.netlify.app/events/posts/2022-11-29_letting-go-of-perfect/index.html</loc>
+    <lastmod>2023-01-16T03:18:51.313Z</lastmod>
   </url>
   <url>
     <loc>https://osssg.netlify.app/events/index.html</loc>
-    <lastmod>2022-08-21T17:22:30.948Z</lastmod>
+    <lastmod>2023-01-16T03:38:53.789Z</lastmod>
+  </url>
+  <url>
+    <loc>https://osssg.netlify.app/index.html</loc>
+    <lastmod>2023-01-16T03:38:53.197Z</lastmod>
+  </url>
+  <url>
+    <loc>https://osssg.netlify.app/contact/index.html</loc>
+    <lastmod>2023-01-16T03:30:53.533Z</lastmod>
+  </url>
+  <url>
+    <loc>https://osssg.netlify.app/about/index.html</loc>
+    <lastmod>2023-01-16T03:19:57.878Z</lastmod>
+  </url>
+  <url>
+    <loc>https://osssg.netlify.app/events/posts/2023-01-19_what-is-open-science/index.html</loc>
+    <lastmod>2023-01-16T03:38:52.182Z</lastmod>
   </url>
 </urlset>

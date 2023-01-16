@@ -76,30 +76,26 @@
       href: https://www.linkedin.com/in/mccarthymg/
       aria-label: Michael's LinkedIn
 
-- name: Madeline Springle
+- name: Kaitlyn Guenther
   role: Promotions
   description: |
-    I’m a second-year Master’s student in Industrial-Organizational Psychology
-    currently studying how Asynchronous Virtual Interviews (AVIs) can negatively
-    impact employment opportunities for people of low socioeconomic status. I’m
-    originally from Ontario and have really enjoyed living in Calgary this past
-    year. Some of my best memories include hiking in the mountains, biking along
-    the Bow River, and rock climbing with friends. I became interested in open
-    science during my fourth year of undergrad when I took a statistics course
-    and learned how to publish a class project on OSF. Since then, I’ve
-    appreciated reading about open science practices and their many benefits and
-    potential areas of concern. I’m passionate about knowledge mobilization and
-    how we can relate psychological research to the workplace to ensure that
-    employees and organizations utilize up-to-date practices.
-  image: avatars/madeline-springle.png
-  image_alt: A professional headshot of Madeline
+    I’m Kaitlyn (she/they) and I am in the final year of my Psychology
+    Undergraduate degree. I’m most interested in Industrial-Organizational
+    Psychology and my research interests include workplace mistreatment,
+    job interviews, and impression management. I have been engaged with research
+    throughout my degree and the most valuable courses I’ve taken have explored
+    how to do research in ways that have the biggest impact on communities.
+    The more I learn about and conduct research, the more I believe that practices
+    like open science and knowledge mobilization are essential. Outside of
+    academics, I really enjoy spending time with my family — we spend a lot of
+    time going for walks and doing puzzles.
+  image: avatars/kaitlyn-guenther.jpg
+  image_alt: A professional headshot of Kaitlyn
   icons:
     - icon: fas fa-envelope
-      href: mailto:madeline.springle@ucalgary.ca
-      aria-label: Madeline's email
+      href: mailto:kaitlyn.guenther@ucalgary.ca
+      aria-label: Kaitlyn's email
     - icon: fab fa-linkedin
-      href: https://www.linkedin.com/in/madeline-springle/
-      aria-label: Madeline's LinkedIn
-    - icon: fab fa-twitter
-      href: https://twitter.com/m_springle
-      aria-label: Madeline's Twitter
+      href: https://www.linkedin.com/in/kaitlyn-guenther-b973251a1/
+      aria-label: Kaitlyn's LinkedIn
+
