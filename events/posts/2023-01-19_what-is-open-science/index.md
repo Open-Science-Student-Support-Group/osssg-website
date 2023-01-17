@@ -11,7 +11,7 @@ event:
   start: 5:00 PM
   end: 6:30 PM
   location: University of Calgary ADMIN 247 
-  registration_link: 
+  registration_link: https://ucalgary.zoom.us/meeting/register/tJMpduutrjIiHtRs1_xwPmslsolZYo-Im9kZ
 ---
 
 ## Event Details

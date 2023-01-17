@@ -1,3 +1,21 @@
+- name: Brittany Lindsay
+  role: Promotions
+  description: |
+    Hi everyone! My name is Brittany (she/her) and I am a PhD candidate in
+    Psychology working with Dr. Andrew Szeto. My research interests involve
+    mental health promotion, mental illness and suicide stigma reduction, and
+    post-secondary student well-being. My other interests include hiking,
+    cooking, listening to podcasts, and hanging out with my pup Mickey!
+    <br><br>
+    I am interested in open science because all science should be transparent
+    and accessible, and the philosophy of open science aligns with these values!
+  image: avatars/brittany-lindsay.png
+  image_alt: Brittany hiking in the mountains with her pup, Mickey
+  icons:
+    - icon: fab fa-linkedin
+      href: https://www.linkedin.com/in/brittanyllindsay/
+      aria-label: Brittany's LinkedIn
+
 - name: Chelsie Miko Hart
   role: Contributor
   description: |
@@ -22,23 +40,86 @@
       href: https://twitter.com/ChelsieMHart
       aria-label: Chelsie's Twitter
 
-- name: Brittany Lindsay
+- name: Emiko Muraki
+  role: Admin/Event Coordination
+  description: |
+   Hi folks! I’m Emiko (she/her) and I am a PhD candidate in experimental
+   psychology. My supervisor is Dr. Penny Pexman and I work in the Language
+   Processing Lab. My research investigates semantic representation and concept
+   knowledge – how we know and access meaning. I’m particularly interested in
+   how other mental processes such as mental imagery are related to how we represent
+   meaning in our minds. I love to travel, but when I’m not travelling, I like to
+   spend time with my two puggles, Scout and Milo. I’ve been interested in open
+   science and how to make my research more open since I started graduate school.
+   I believe open science practices are critical to improving equity and inclusion
+   and advancing social justice in academia.
+
+  image: avatars/emiko-muraki.jpg
+  image_alt: A picture of Emiko with an elephant
+  icons:
+    - icon: fas fa-envelope
+      href: mailto:ejmuraki@ucalgary.ca
+      aria-label: Emiko's email
+    - icon: fab fa-twitter
+      href: https://twitter.com/ejmuraki?lang=en
+      aria-label: Emiko's Twitter
+    - icon: fab fa-github
+      href: https://github.com/ejmuraki
+      aria-label: Emiko's GitHub
+    - icon: fas fa-graduation-cap
+      href: https://scholar.google.ca/citations?user=8nGUhd8AAAAJ&hl=en
+      aria-label: Emiko's google scholar
+    - icon: fab fa-orcid
+      href: https://orcid.org/0000-0001-9534-6538
+      aria-label: Emiko's ORCiD
+
+- name: Jenelle Morgan
   role: Promotions
   description: |
-    Hi everyone! My name is Brittany (she/her) and I am a PhD candidate in
-    Psychology working with Dr. Andrew Szeto. My research interests involve
-    mental health promotion, mental illness and suicide stigma reduction, and
-    post-secondary student well-being. My other interests include hiking,
-    cooking, listening to podcasts, and hanging out with my pup Mickey!
-    <br><br>
-    I am interested in open science because all science should be transparent
-    and accessible, and the philosophy of open science aligns with these values!
-  image: avatars/brittany-lindsay.png
-  image_alt: Brittany hiking in the mountains with her pup, Mickey
+    Hey Everyone! My name is Jenelle Morgan, and I'm a Ph.D. student in the
+    Industrial-Organizational Psychology Program. I work in the Selection and
+    Recruitment lab with my supervisor, Dr. Derek Chapman. Our work mainly
+    focuses on how and why employees choose to broadcast their experiences with
+    their organization and how that impacts prospective applicants' perceptions.
+    I also have a budding interest in examining unethical behaviours in the
+    organization and the intersection of AI and recruiting/selection. As someone
+    whose research has benefitted from Open Science practices (especially with
+    the sharing of resources used in projects), I believe in this philosophy and
+    hope to further efforts to educate and empower practices around making research
+    transparent and accessible.
+
+  image: avatars/jenelle-morgan.png
+  image_alt: A professional headshot of Jenelle
   icons:
+    - icon: fas fa-envelope
+      href: mailto:jenelle.morgan@ucalgary.ca
+      aria-label: Jenelle's email
     - icon: fab fa-linkedin
-      href: https://www.linkedin.com/in/brittanyllindsay/
-      aria-label: Brittany's LinkedIn
+      href: https://www.linkedin.com/in/jenelle-morgan-438b0617b
+      aria-label: Jenelle's LinkedIn
+
+- name: Kaitlyn Guenther
+  role: Promotions
+  description: |
+    I’m Kaitlyn (she/they) and I am in the final year of my Psychology
+    Undergraduate degree. I’m most interested in Industrial-Organizational
+    Psychology and my research interests include workplace mistreatment,
+    job interviews, and impression management. I have been engaged with research
+    throughout my degree and the most valuable courses I’ve taken have explored
+    how to do research in ways that have the biggest impact on communities.
+    The more I learn about and conduct research, the more I believe that practices
+    like open science and knowledge mobilization are essential. Outside of
+    academics, I really enjoy spending time with my family — we spend a lot of
+    time going for walks and doing puzzles.
+  image: avatars/kaitlyn-guenther.jpg
+  image_alt: A professional headshot of Kaitlyn
+  icons:
+    - icon: fas fa-envelope
+      href: mailto:kaitlyn.guenther@ucalgary.ca
+      aria-label: Kaitlyn's email
+    - icon: fab fa-linkedin
+      href: https://www.linkedin.com/in/kaitlyn-guenther-b973251a1/
+      aria-label: Kaitlyn's LinkedIn
 
 - name: Michael McCarthy
   role: Contributor
@@ -76,26 +157,5 @@
       href: https://www.linkedin.com/in/mccarthymg/
       aria-label: Michael's LinkedIn
 
-- name: Kaitlyn Guenther
-  role: Promotions
-  description: |
-    I’m Kaitlyn (she/they) and I am in the final year of my Psychology
-    Undergraduate degree. I’m most interested in Industrial-Organizational
-    Psychology and my research interests include workplace mistreatment,
-    job interviews, and impression management. I have been engaged with research
-    throughout my degree and the most valuable courses I’ve taken have explored
-    how to do research in ways that have the biggest impact on communities.
-    The more I learn about and conduct research, the more I believe that practices
-    like open science and knowledge mobilization are essential. Outside of
-    academics, I really enjoy spending time with my family — we spend a lot of
-    time going for walks and doing puzzles.
-  image: avatars/kaitlyn-guenther.jpg
-  image_alt: A professional headshot of Kaitlyn
-  icons:
-    - icon: fas fa-envelope
-      href: mailto:kaitlyn.guenther@ucalgary.ca
-      aria-label: Kaitlyn's email
-    - icon: fab fa-linkedin
-      href: https://www.linkedin.com/in/kaitlyn-guenther-b973251a1/
-      aria-label: Kaitlyn's LinkedIn
+
 
