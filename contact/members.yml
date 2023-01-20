@@ -16,6 +16,26 @@
       href: https://www.linkedin.com/in/brittanyllindsay/
       aria-label: Brittany's LinkedIn
 
+- name: Ceilidh McConnell
+  role: Community
+  description: |
+   I’m Ceilidh (she/her), a MSc student in experimental psychology supervised by
+   Dr. Deinera Exner-Cortens. My research interests include gender-based violence,
+   prevention science, and socio-emotional development. I am invested in learning
+   about and practicing open science to ensure transparency and accessibility.
+   Additionally, I believe in order to respectfully collaborate with stakeholders
+   and community partners in research it is important to advocate for open access
+   to knowledge and findings for all.
+  image: avatars/ceilidh-mcconnell.JPG
+  image_alt: A nice headshot of Ceilidh
+  icons:
+    - icon: fab fa-linkedin
+      href: https://www.linkedin.com/in/ceilidh-mcconnell-2a8b41215/
+      aria-label: Ceilidh's LinkedIn
+    - icon: fab fa-twitter
+      href: https://twitter.com/CeilidhMcConne1
+      aria-label: Ceilidh's Twitter
+
 - name: Chelsie Miko Hart
   role: Contributor
   description: |
