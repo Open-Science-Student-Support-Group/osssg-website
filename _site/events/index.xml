@@ -10,7 +10,32 @@
 <atom:link href="https://osssg.netlify.app/events/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.1.251</generator>
-<lastBuildDate>Sun, 15 Jan 2023 07:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sat, 28 Jan 2023 07:00:00 GMT</lastBuildDate>
+<item>
+  <title>Git, GitHub, and R for beginners</title>
+  <link>https://osssg.netlify.app/events/posts/2023-02-02_Git-GitHub-R-for-beginners/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<section id="event-details" class="level2">
+<h2 class="anchored" data-anchor-id="event-details">Event Details</h2>
+<p><strong>Speaker</strong>: YeEun Park, Yudhajit Ain<br>
+<strong>Date and Time</strong>: February 2, 2023, from 4:00 PM to 5:30 PM<br>
+<strong>Location</strong>: University of Calgary</p>
+<p>Git is an open-source version control system used extensively for managing projects, but can feel complicated to set up for beginners. In this workshop, you will learn the basics of Git, Github, and R. It will be a practical hands-on workshop where we’ll go through the learning process together. Topics include: What is Git? Why do you need Git &amp; Github? What kind of project is it used for? How does Git work? How does it work with R &amp; R studio? Note: Any program downloads will be done during the workshop, so only a computer is required to participate!</p>
+<div class="tool">
+<p><a href="https://ucalgary.zoom.us/meeting/register/tJYsdOGppj0oHtQl8jIQSqViHp3PxpYZ0Yni" class="btn"> <i class="fas fa-user-plus"></i> Sign Up </a></p>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <category>workshops</category>
+  <guid>https://osssg.netlify.app/events/posts/2023-02-02_Git-GitHub-R-for-beginners/index.html</guid>
+  <pubDate>Sat, 28 Jan 2023 07:00:00 GMT</pubDate>
+</item>
 <item>
   <title>What is Open Science</title>
   <link>https://osssg.netlify.app/events/posts/2023-01-19_what-is-open-science/index.html</link>
