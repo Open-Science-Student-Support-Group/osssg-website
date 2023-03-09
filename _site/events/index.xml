@@ -10,7 +10,32 @@
 <atom:link href="https://osssg.netlify.app/events/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.1.251</generator>
-<lastBuildDate>Sat, 28 Jan 2023 07:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 08 Mar 2023 07:00:00 GMT</lastBuildDate>
+<item>
+  <title>Accessibility & Disability Accommodations in Open Science</title>
+  <link>https://osssg.netlify.app/events/posts/2023-03-09_Accessibility/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<section id="event-details" class="level2">
+<h2 class="anchored" data-anchor-id="event-details">Event Details</h2>
+<p><strong>Speaker</strong>: Kaitlyn Guenther<br>
+<strong>Date and Time</strong>: March 9, 2023, from 5:00 PM to 7:00 PM<br>
+<strong>Location</strong>: ADMIN 248 (virtual option via Zoom)</p>
+<p>Part of open science is making research more accessible to everyone, and to achieve this goal we must also consider the disabled community when sharing information, research, and files. For this tutorial, we will: Talk about the key guidelines for making online information more accessible for disabled people. Discuss the importance of information accessibility when conducting and sharing research. Walk through the process of making everyday documents (e.g., word documents) accessible to disabled viewers.</p>
+<div class="tool">
+<p><a href="https://ucalgary.zoom.us/meeting/register/tJ0kce6qqDgjHNUDkqiDD8UqhaD757U4gjDx" class="btn"> <i class="fas fa-user-plus"></i> Sign Up </a></p>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <category>tutorials</category>
+  <guid>https://osssg.netlify.app/events/posts/2023-03-09_Accessibility/index.html</guid>
+  <pubDate>Wed, 08 Mar 2023 07:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Git, GitHub, and R for beginners</title>
   <link>https://osssg.netlify.app/events/posts/2023-02-02_Git-GitHub-R-for-beginners/index.html</link>

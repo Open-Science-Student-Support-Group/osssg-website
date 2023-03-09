@@ -7,7 +7,7 @@ categories:
 
 event:
   speaker: Kaitlyn Guenther
-  date: March 8, 2023
+  date: March 9, 2023
   start: 5:00 PM
   end: 7:00 PM
   location: ADMIN 248 (virtual option via Zoom)
